@@ -20,7 +20,7 @@
 9 verbose stack     at maybeClose (internal/child_process.js:850:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 10 verbose pkgid mock-customfunctions-server@1.0.0
-11 verbose cwd /home/soundarya-21716/Downloads/Mock server - data/mock-okta-server
+11 verbose cwd /home/soundarya-21716/Downloads/Mock server - data/mock-server/mock-customfunctions-server
 12 error Linux 6.8.0-47-generic
 13 error argv "/home/soundarya-21716/.nvm/versions/node/v5.12.0/bin/node" "/home/soundarya-21716/.nvm/versions/node/v5.12.0/bin/npm" "start"
 14 error node v5.12.0

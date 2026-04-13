@@ -16,7 +16,7 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('../utils/logger');
-const mockData = require('../data/mockResponses');
+const { getMockData } = require('../data/mockResponses');
 const serviceMeta = require('../data/serviceMeta');
 
 // ============================================================================
@@ -61,6 +61,7 @@ router.get('/:service', (req, res) => {
     });
   }
 
+  const mockData = getMockData();
   const serviceData = mockData[service] || {};
   const functions = meta.functions.map(f => {
     const fnData = serviceData[f.safeName];
@@ -98,6 +99,7 @@ function handleMockRequest(req, res) {
     });
   }
 
+  const mockData = getMockData();
   const serviceData = mockData[service];
   if (!serviceData) {
     return res.status(404).json({
