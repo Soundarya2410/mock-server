@@ -149,6 +149,15 @@ async function renderMain() {
     }
   } catch(e) {}
 
+  // Extract local path from the real API URL
+  let realPath = '/mock/' + activeService + '/' + f.name; // fallback
+  if (f.api && f.api !== 'No API' && !f.api.startsWith('Dynamic')) {
+    try {
+      const m = f.api.match(/^https?:\/\/[^\/]+(\/.*?)(?:\?.*)?$/);
+      if (m) realPath = m[1].replace(/\/\{[^}]+\}/g, '');
+    } catch(_) {}
+  }
+
   document.getElementById('main').innerHTML = `
     <div class="ep-title">${f.sno}. ${f.name}</div>
     <div class="ep-api"><span class="method-badge ${mc}">${f.method}</span>${f.api}</div>
@@ -158,7 +167,7 @@ async function renderMain() {
       <div class="panel-body">
         <div class="form-group">
           <label>Endpoint</label>
-          <input type="text" id="endpoint-url" value="/mock/${activeService}/${f.name}" readonly style="width:100%;padding:8px 10px;background:#1e2235;border:1px solid #2d3348;border-radius:6px;color:#58a6ff;font-family:Consolas,monospace;font-size:12px;outline:none">
+          <input type="text" id="endpoint-url" value="${realPath}" readonly style="width:100%;padding:8px 10px;background:#1e2235;border:1px solid #2d3348;border-radius:6px;color:#58a6ff;font-family:Consolas,monospace;font-size:12px;outline:none">
         </div>
         <div class="form-group">
           <label>Request Body (JSON)</label>
@@ -179,13 +188,14 @@ async function renderMain() {
 async function sendRequest() {
   const url = document.getElementById('endpoint-url').value;
   const bodyText = document.getElementById('req-body').value;
+  const method = activeFn ? activeFn.method : 'POST';
   const start = performance.now();
   try {
-    const resp = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: bodyText
-    });
+    const headers = { 'Content-Type': 'application/json' };
+    if (activeFn) headers['X-Function-Name'] = activeFn.name;
+    const fetchOpts = { method, headers };
+    if (method !== 'GET' && method !== 'HEAD') fetchOpts.body = bodyText;
+    const resp = await fetch(url, fetchOpts);
     const elapsed = Math.round(performance.now() - start);
     const data = await resp.json();
     document.getElementById('resp-time').textContent = elapsed + 'ms | HTTP ' + resp.status;

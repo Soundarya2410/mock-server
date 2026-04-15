@@ -1,0 +1,3871 @@
+[
+  {
+    "itemName": "Get Rule Groups",
+    "urlPath": "fwmgr/queries/rule-groups/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.024055527,
+        "pagination": {
+          "offset": 4,
+          "limit": 100,
+          "total": 4
+        },
+        "powered_by": "svc-firewallmanager",
+        "trace_id": "3056ff94-6013-4fe7-83e8-3f22a1cfb1f1"
+      },
+      "resources": [
+        "e1cf7edd6945479db546285b8e4cce64",
+        "cc81ad8fb96b4c5c9d497ee692792c90",
+        "339ff12c4a764c4a860cc2874912eafc",
+        "2b65b2410b6c43e0b4351fdd7ace4336"
+      ]
+    }
+  },
+  {
+    "itemName": "Create Rule Group",
+    "urlPath": "fwmgr/entities/rule-groups/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.163070682,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "svc-firewallmanager",
+        "trace_id": "75bcbe5f-806c-409f-8901-5f962f2fcddd"
+      },
+      "resources": [
+        "7806adb59aa44970b5021cdd24f71cc1"
+      ]
+    }
+  },
+  {
+    "itemName": "Update Rule Group",
+    "urlPath": "fwmgr/entities/rule-groups/v1",
+    "method": "PATCH",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.844002284,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "svc-firewallmanager",
+        "trace_id": "18563637-ffc4-4621-b034-d3e897f70567"
+      },
+      "resources": [
+        "8d6a993080b741c09a3da42ac7ad7d01"
+      ]
+    }
+  },
+  {
+    "itemName": "Get Rule Group Details",
+    "urlPath": "fwmgr/entities/rule-groups/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.009532937,
+        "powered_by": "svc-firewallmanager",
+        "trace_id": "56ddfcfc-6549-4142-9746-9f2ae0ffe8ce"
+      },
+      "resources": [
+        {
+          "id": "e1cf7edd6945479db546285b8e4cce64",
+          "customer_id": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "sm-test",
+          "description": "",
+          "created_by": "chinthan.pn@zohocorp.com",
+          "created_on": "2025-04-24T22:07:10.162493784Z",
+          "modified_by": "a29740517e0d4012a23f2064bb52eae2",
+          "modified_on": "2025-11-04T14:34:40.286261873Z",
+          "tracking": "NDQzMDQxOjY=",
+          "enabled": true,
+          "deleted": false,
+          "rule_ids": [
+            "8258dfd0b46742158ae81552ce54a913"
+          ],
+          "policy_ids": [
+            "41a4147e77364bebb66b8f2c9cf4cbac"
+          ],
+          "platform": "windows"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Update Prevention Policy",
+    "urlPath": "fwmgr/entities/policies/v2",
+    "method": "PUT",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.104820184,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "svc-firewallmanager",
+        "trace_id": "18e23915-1a42-462c-925b-44e34787dbf6"
+      },
+      "resources": null
+    }
+  },
+  {
+    "itemName": "Create Firewall Policy",
+    "urlPath": "policy/entities/firewall/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.154944068,
+        "trace_id": "127dbb1a-f5bf-4c51-8b5b-f056c2f36c71"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "9409aa7629ca49228bc9b311dc209ee8",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "Test Firewall POlicy",
+          "description": "Test Firewall Policy",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": false,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-09-12T10:13:17.106732945Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-09-12T10:13:17.106732945Z",
+          "channel_version": 0,
+          "rule_set_id": "9409aa7629ca49228bc9b311dc209ee8"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Perform Firewall Policy Action",
+    "urlPath": "policy/entities/firewall-actions/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.217852075,
+        "trace_id": "cffea5bb-8127-4bb0-8e63-8433edd003da"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "9409aa7629ca49228bc9b311dc209ee8",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "Test Firewall POlicy",
+          "description": "Test Firewall Policy",
+          "platform_name": "Windows",
+          "groups": [
+            {
+              "id": "cf12e080886048c89322f73396a1ee16",
+              "group_type": "dynamic",
+              "name": "API-Testing-Group",
+              "description": "",
+              "assignment_rule": "hostname:'WIN-DDHJPS3L2L9'",
+              "created_by": "shunmugavel.ss@zohocorp.com",
+              "created_timestamp": "2025-08-23T08:46:30.474463927Z",
+              "modified_by": "shunmugavel.ss@zohocorp.com",
+              "modified_timestamp": "2025-09-12T13:31:10.989727149Z"
+            }
+          ],
+          "enabled": false,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-09-12T10:13:17.106732945Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-09-12T10:13:17.575648357Z",
+          "channel_version": 0,
+          "rule_set_id": "9409aa7629ca49228bc9b311dc209ee8"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Perform Sensor Update Policy",
+    "urlPath": "policy/entities/sensor-update-actions/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.062577371,
+        "trace_id": "12d3a179-502a-41c7-8e39-940e5240175f"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "d425c6129a9f4ba8b74095bf1ec22ebd",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "WindowsSensorPolicyExample",
+          "description": "StandardWindowsSensorPolicy",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": true,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-09-12T09:56:19.041414091Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-09-12T11:17:52.677088062Z",
+          "settings": {
+            "build": ""
+          }
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Create Sensor Policy",
+    "urlPath": "policy/entities/sensor-update/v2",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.089246752,
+        "trace_id": "0729947a-9be8-4aa1-8a0b-c43d2ce9137a"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "c6ba267b63cb4ac8b9bf640da7d783fe",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "Windows Sensor Policy Example",
+          "description": "Standard Windows Sensor Policy",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": false,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-09-15T09:45:59.024011412Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-09-15T09:45:59.024011412Z",
+          "settings": {
+            "build": "",
+            "uninstall_protection": "DISABLED",
+            "show_early_adopter_builds": false,
+            "sensor_version": "",
+            "stage": "",
+            "variants": null,
+            "scheduler": {
+              "enabled": false,
+              "timezone": "Asia/Kolkata",
+              "schedules": [
+                {
+                  "start": "08:00",
+                  "end": "18:00",
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Update Sensor Policy",
+    "urlPath": "policy/entities/sensor-update/v2",
+    "method": "PATCH",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.206982764,
+        "trace_id": "6565254b-7a4d-4206-8cc8-94478f323a50"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "c6ba267b63cb4ac8b9bf640da7d783fe",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "windowssensorpolicyupdate",
+          "description": "update_policy_description",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": false,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-09-15T09:45:59.024011412Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-09-15T09:47:09.163014634Z",
+          "settings": {
+            "build": "",
+            "uninstall_protection": "ENABLED",
+            "show_early_adopter_builds": true,
+            "sensor_version": "",
+            "stage": "",
+            "variants": null,
+            "scheduler": {
+              "enabled": true,
+              "timezone": "Asia/Kolkata",
+              "schedules": [
+                {
+                  "start": "09:00",
+                  "end": "20:00",
+                  "days": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Query Combined Sensor Update Policies",
+    "urlPath": "policy/combined/sensor-update/v2",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.030280756,
+        "pagination": {
+          "offset": 7,
+          "limit": 100,
+          "total": 7
+        },
+        "trace_id": "8da3c4ff-fea9-4255-a5f1-533f22609a94"
+      },
+      "errors": [],
+      "resources": [
+        {
+          "id": "c6ba267b63cb4ac8b9bf640da7d783fe",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "Sensor policy update",
+          "description": "sensor policy update for removal alert handler",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": false,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-09-15T09:45:59.024011412Z",
+          "modified_by": "api-client-id:a29740517e0d4012a23f2064bb52eae2",
+          "modified_timestamp": "2025-11-14T09:37:04.209460441Z",
+          "settings": {
+            "build": "",
+            "uninstall_protection": "ENABLED",
+            "show_early_adopter_builds": true,
+            "sensor_version": "",
+            "stage": "",
+            "variants": null,
+            "scheduler": {
+              "enabled": true,
+              "timezone": "Asia/Kolkata",
+              "schedules": [
+                {
+                  "start": "09:00",
+                  "end": "20:00",
+                  "days": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "3ff5c90bc36a472fb92b5aa3208d3593",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "Real time",
+          "description": "",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": false,
+          "created_by": "laxmipriya.r@zohocorp.com",
+          "created_timestamp": "2025-10-31T07:35:52.887646003Z",
+          "modified_by": "laxmipriya.r@zohocorp.com",
+          "modified_timestamp": "2025-10-31T07:35:52.887646003Z",
+          "settings": {
+            "build": "",
+            "uninstall_protection": "ENABLED",
+            "show_early_adopter_builds": false,
+            "sensor_version": "",
+            "stage": "",
+            "variants": null,
+            "scheduler": {
+              "enabled": false,
+              "timezone": "",
+              "schedules": []
+            }
+          }
+        },
+        {
+          "id": "9f56c75e5e93467184f80173ad58b657",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "WindowsSensorPolicyExample",
+          "description": "StandardWindowsSensorPolicy",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": false,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-11-24T10:01:12.95376851Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-11-24T10:01:12.95376851Z",
+          "settings": {
+            "build": "",
+            "uninstall_protection": "DISABLED",
+            "show_early_adopter_builds": false,
+            "sensor_version": "",
+            "stage": "",
+            "variants": null,
+            "scheduler": {
+              "enabled": false,
+              "timezone": "Asia/Kolkata",
+              "schedules": [
+                {
+                  "start": "08:00",
+                  "end": "18:00",
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "8515905a082c484cad5d4bbe744b7f74",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "Windows Sensor Policy Example",
+          "description": "Standard Windows Sensor Policy",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": false,
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-12-02T05:28:50.110612456Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-12-02T05:28:50.110612456Z",
+          "settings": {
+            "build": "",
+            "uninstall_protection": "DISABLED",
+            "show_early_adopter_builds": false,
+            "sensor_version": "",
+            "stage": "",
+            "variants": null,
+            "scheduler": {
+              "enabled": false,
+              "timezone": "Asia/Kolkata",
+              "schedules": [
+                {
+                  "start": "08:00",
+                  "end": "18:00",
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "b75a0e69b6f1434fb0343f92dd89dc0a",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "platform_default",
+          "description": "Platform default policy",
+          "platform_name": "Linux",
+          "groups": [],
+          "enabled": true,
+          "created_by": "6d910a2d8a2b47adababaecce2c242fc",
+          "created_timestamp": "2024-06-05T17:42:01.279910036Z",
+          "modified_by": "harish.rh@zohocorp.com",
+          "modified_timestamp": "2025-06-30T13:02:17.740840804Z",
+          "settings": {
+            "build": "18306|n-1|tagged|5",
+            "uninstall_protection": "DISABLED",
+            "show_early_adopter_builds": false,
+            "sensor_version": "7.30.18306",
+            "stage": "prod",
+            "variants": [
+              {
+                "build": "18306|n-1|tagged|9",
+                "sensor_version": "7.30.18306",
+                "platform": "LinuxArm64",
+                "stage": "prod"
+              },
+              {
+                "build": "18306|n-1|tagged|20",
+                "sensor_version": "7.30.18306",
+                "platform": "ZLinux",
+                "stage": "prod"
+              }
+            ],
+            "scheduler": {
+              "enabled": false,
+              "timezone": "",
+              "schedules": []
+            }
+          }
+        },
+        {
+          "id": "9b4704573e2446f8a0f0d9055786a675",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "platform_default",
+          "description": "Platform default policy",
+          "platform_name": "Mac",
+          "groups": [],
+          "enabled": true,
+          "created_by": "6d910a2d8a2b47adababaecce2c242fc",
+          "created_timestamp": "2024-06-05T17:42:01.279908004Z",
+          "modified_by": "harish.rh@zohocorp.com",
+          "modified_timestamp": "2025-06-30T13:01:50.998736426Z",
+          "settings": {
+            "build": "20103|n-1|tagged|3",
+            "uninstall_protection": "ENABLED",
+            "show_early_adopter_builds": false,
+            "sensor_version": "7.29.20103",
+            "stage": "prod",
+            "variants": null,
+            "scheduler": {
+              "enabled": false,
+              "timezone": "",
+              "schedules": []
+            }
+          }
+        },
+        {
+          "id": "cb0a1e4155fb46b9a957e82096cd5114",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "platform_default",
+          "description": "Platform default policy",
+          "platform_name": "Windows",
+          "groups": [],
+          "enabled": true,
+          "created_by": "6d910a2d8a2b47adababaecce2c242fc",
+          "created_timestamp": "2024-06-05T17:42:01.279903172Z",
+          "modified_by": "soundaryalakshmi.b@zohocorp.com",
+          "modified_timestamp": "2025-11-12T05:34:16.542945822Z",
+          "settings": {
+            "build": "20108|n-1|tagged|1",
+            "uninstall_protection": "DISABLED",
+            "show_early_adopter_builds": false,
+            "sensor_version": "7.29.20108",
+            "stage": "prod",
+            "variants": null,
+            "scheduler": {
+              "enabled": false,
+              "timezone": "Asia/Calcutta",
+              "schedules": []
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Isolate Endpoint",
+    "urlPath": "devices/entities/devices-actions/v2",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.620245734,
+        "powered_by": "device-api",
+        "trace_id": "921496e2d1f744a7ae0daf01e976fcc6"
+      },
+      "resources": [
+        {
+          "id": "3d42a5754b9b473987133669e72504b9",
+          "path": "/devices/entities/devices/v1"
+        }
+      ],
+      "errors": []
+    }
+  },
+  {
+    "itemName": "UnIsolate Endpoint",
+    "urlPath": "devices/entities/devices-actions/v2",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.62354289,
+        "powered_by": "device-api",
+        "trace_id": "8defdbc045d24a64b09a95a083bd8f44"
+      },
+      "resources": [
+        {
+          "id": "3d42a5754b9b473987133669e72504b9",
+          "path": "/devices/entities/devices/v1"
+        }
+      ],
+      "errors": []
+    }
+  },
+  {
+    "itemName": "Search Device",
+    "urlPath": "devices/entities/devices/v2",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.03291436,
+        "powered_by": "device-api",
+        "trace_id": "e57dc0ad9d3b4b6795e6416db574da0d"
+      },
+      "resources": [
+        {
+          "device_id": "d60a7c64f06c42bf9271af6c3c5dd55c",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "agent_load_flags": "16",
+          "agent_local_time": "2025-08-07T13:02:22.678Z",
+          "agent_version": "7.27.19907.0",
+          "bios_manufacturer": "Dell Inc.",
+          "bios_version": "1.21.0",
+          "build_number": "19045",
+          "config_id_base": "65994767",
+          "config_id_build": "19907",
+          "config_id_platform": "3",
+          "cpu_signature": "656978",
+          "cpu_vendor": "0",
+          "external_ip": "182.74.243.49",
+          "mac_address": "74-78-27-11-a1-ea",
+          "hostname": "4440-TEST",
+          "host_hidden_status": "visible",
+          "filesystem_containment_status": "normal",
+          "first_seen": "2025-03-05T09:34:50Z",
+          "last_seen": "2025-08-22T14:16:05Z",
+          "local_ip": "10.71.27.157",
+          "machine_domain": "auto1.com",
+          "major_version": "10",
+          "minor_version": "0",
+          "os_version": "Windows 10",
+          "os_build": "19045",
+          "ou": [],
+          "platform_id": "0",
+          "platform_name": "Windows",
+          "policies": [
+            {
+              "policy_type": "prevention",
+              "policy_id": "e0e0a877b8b1470e9e5a113aeaae9be9",
+              "applied": true,
+              "settings_hash": "668cc748",
+              "assigned_date": "2025-03-20T13:11:50.656778551Z",
+              "applied_date": "2025-03-20T13:44:18.395868351Z",
+              "rule_groups": []
+            }
+          ],
+          "reduced_functionality_mode": "no",
+          "rtr_state": "enabled",
+          "device_policies": {
+            "prevention": {
+              "policy_type": "prevention",
+              "policy_id": "e0e0a877b8b1470e9e5a113aeaae9be9",
+              "applied": true,
+              "settings_hash": "668cc748",
+              "assigned_date": "2025-03-20T13:11:50.656778551Z",
+              "applied_date": "2025-03-20T13:44:18.395868351Z",
+              "rule_groups": []
+            },
+            "sensor_update": {
+              "policy_type": "sensor-update",
+              "policy_id": "cb0a1e4155fb46b9a957e82096cd5114",
+              "applied": true,
+              "settings_hash": "tagged|1;101",
+              "assigned_date": "2025-08-07T07:33:20.32139292Z",
+              "applied_date": "2025-08-07T07:42:49.73823036Z",
+              "uninstall_protection": "ENABLED"
+            },
+            "device_control": {
+              "policy_type": "device-control",
+              "policy_id": "b41798fb0da8b5c8271cf7764f6baf21",
+              "applied": false,
+              "settings_hash": "10469767",
+              "assigned_date": "2025-03-05T09:36:20.045356638Z",
+              "applied_date": null
+            },
+            "global_config": {
+              "policy_type": "globalconfig",
+              "policy_id": "23997076e308498ab5336af19167912d",
+              "applied": true,
+              "settings_hash": "a917821c",
+              "assigned_date": "2025-08-19T13:42:50.821143063Z",
+              "applied_date": "2025-08-19T13:57:20.341723593Z"
+            },
+            "remote_response": {
+              "policy_type": "remote-response",
+              "policy_id": "4c297093e2ce480ca11e9d7e9ee850ef",
+              "applied": true,
+              "settings_hash": "f472bd8e",
+              "assigned_date": "2025-03-05T09:36:20.044998122Z",
+              "applied_date": "2025-03-05T09:38:15.053835306Z"
+            },
+            "firewall": {
+              "policy_type": "firewall",
+              "policy_id": "5ff9d3cbb89d4007871922938f9f461a",
+              "applied": true,
+              "settings_hash": "14b3475a",
+              "assigned_date": "2025-03-05T09:36:20.044992735Z",
+              "applied_date": "2025-03-05T09:38:15.027803719Z",
+              "rule_set_id": "5ff9d3cbb89d4007871922938f9f461a"
+            },
+            "system-tray": {
+              "policy_type": "system-tray",
+              "policy_id": "ecf9801dd522418cb08a5832b15d1b82",
+              "applied": true,
+              "settings_hash": "64111ecabb0f2fff301bef6007dd2792f26df4fe37d52475b301883d5d05a856",
+              "assigned_date": "2025-03-22T16:02:04.118685862Z",
+              "applied_date": "2025-03-22T23:07:37.504231463Z"
+            },
+            "data-protection": {
+              "policy_type": "data-protection",
+              "policy_id": "24d0d57e98b343229a07c001105843b9",
+              "applied": true,
+              "settings_hash": "cd67c56bb61fd59bb3c827344b861a02c05751fa70300f8e6f6b3b98852631d6",
+              "assigned_date": "2025-07-25T08:48:49.878493504Z",
+              "applied_date": "2025-08-07T07:23:41.240117541Z"
+            },
+            "host-retention": {
+              "policy_type": "host-retention",
+              "policy_id": "a3230acee14c485a81bac2ec4412341d",
+              "applied": true,
+              "settings_hash": "fce339fc6cbb4dae36929fe363a81368f4a7e3f2c3a3d62ff7e3ef202ee48df5",
+              "assigned_date": "2025-03-05T09:36:20.045265974Z",
+              "applied_date": "2025-03-05T09:36:22.0828229Z"
+            },
+            "browser-extension": {
+              "policy_type": "browser-extension",
+              "policy_id": "9ce9db510e234837b4cea97a10b01a9b",
+              "applied": true,
+              "settings_hash": "703a53a9569764fe0169ebc6af5d0f4e1646ee9c933ddfae4aed2b89244ac704",
+              "assigned_date": "2025-07-25T08:48:49.877128615Z",
+              "applied_date": "2025-07-25T08:52:20.295223084Z"
+            },
+            "content-update": {
+              "policy_type": "content-update",
+              "policy_id": "93169ba72d6c4e72b540f0566104102f",
+              "applied": true,
+              "settings_hash": "5003668666881555818",
+              "assigned_date": "2025-04-17T09:28:02.081858935Z",
+              "applied_date": "2025-04-17T09:28:02.081858935Z"
+            }
+          },
+          "groups": [
+            "01c7deaacc314da7ace1e2ba9aa2a8a7",
+            "a19bca26f5134a8f872d3c45307ddbcf"
+          ],
+          "group_hash": "a05d512a80c177216c00767454c1466b2cdf1f7037989231b16334655522fa54",
+          "product_type": "1",
+          "product_type_desc": "Workstation",
+          "provision_status": "Provisioned",
+          "serial_number": "B891R73",
+          "service_pack_minor": "0",
+          "pointer_size": "8",
+          "status": "normal",
+          "system_manufacturer": "Dell Inc.",
+          "system_product_name": "Precision 3551",
+          "tags": [],
+          "modified_timestamp": "2025-08-22T14:52:39Z",
+          "meta": {
+            "version": "33169",
+            "version_string": "13:34954501009"
+          },
+          "kernel_version": "10.0.19045.5247",
+          "os_product_name": "Windows 10 Pro",
+          "chassis_type": "10",
+          "chassis_type_desc": "Laptop",
+          "last_reboot": "2025-07-14T08:21:49Z",
+          "pod_labels": [],
+          "pod_annotations": [],
+          "connection_ip": "10.71.27.157",
+          "default_gateway_ip": "10.71.26.1",
+          "connection_mac_address": "74-78-27-11-a1-ea"
+        }
+      ],
+      "errors": null
+    }
+  },
+  {
+    "itemName": "Create Host Groups",
+    "urlPath": "devices/entities/host-groups/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 2.411137181,
+        "trace_id": "7118a04d-c87b-4944-acac-146dde6bf198"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "445b5badac9d43f4927d27e6c209b7fa",
+          "group_type": "dynamic",
+          "name": "crowdstrike_playbook_test_1",
+          "description": "This was created for API testing",
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-12-02T06:22:04.580973574Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-12-02T06:22:04.580973574Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Update Host Group",
+    "urlPath": "devices/entities/host-groups/v1",
+    "method": "PATCH",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.527848429,
+        "trace_id": "bb224df3-43bc-4d5d-a271-e663d6dbf121"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "445b5badac9d43f4927d27e6c209b7fa",
+          "group_type": "dynamic",
+          "name": "crowdstrike_playbook_test_1",
+          "description": "This is update",
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_timestamp": "2025-12-02T06:22:04.580973574Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-12-02T06:24:15.311177655Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Delete Host Group",
+    "urlPath": "devices/entities/host-groups/v1",
+    "method": "DELETE",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 3.466436411,
+        "trace_id": "8ade6a4c-0ce4-4f9c-b04a-fea8c312daaf"
+      },
+      "resources": [
+        "445b5badac9d43f4927d27e6c209b7fa"
+      ],
+      "errors": []
+    }
+  },
+  {
+    "itemName": "Get Host Groups",
+    "urlPath": "devices/entities/host-groups/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.123457061,
+        "trace_id": "18e4b610-77f0-40b1-94e0-d85234b4d167"
+      },
+      "errors": [],
+      "resources": [
+        {
+          "id": "e905987e33eb46a489a02646d12df283",
+          "group_type": "static",
+          "name": "AD-manager",
+          "description": "AD-manager team",
+          "assignment_rule": "device_id:[],hostname:['AUTOMATION-MACH','AUTOTEST-01']",
+          "created_by": "jeffin.gd@zohocorp.com",
+          "created_timestamp": "2025-01-24T07:18:21.000920382Z",
+          "modified_by": "jeffin.gd@zohocorp.com",
+          "modified_timestamp": "2025-01-24T07:19:37.673375509Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Retrieve User ID",
+    "urlPath": "user-management/queries/users/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.057258142,
+        "pagination": {
+          "offset": 0,
+          "limit": 100,
+          "total": 23
+        },
+        "powered_by": "cs.flightcontrolapi",
+        "trace_id": "90fdce73-f891-45d1-8663-d950c3cf6bb8"
+      },
+      "resources": [
+        "67a2d886-2c9a-47c0-b403-73cefd3c0834",
+        "e5643cda-ed3e-4ab9-b748-b948ea285123",
+        "d1f82b61-31e2-4100-bcdd-586db7a95c2d",
+        "f2b3dfc0-c62c-40a9-a5a9-743ac857e31f",
+        "b3c5a2a6-690c-401e-adfd-6063390e8bfe",
+        "fd34cdd7-5975-4dde-ac93-74b4eb1204da",
+        "b66c50b2-8d67-4ebe-8320-971d270be586",
+        "7c7da9e7-c2f0-4e71-a7be-daf7fc92faeb",
+        "9512ae5b-eff7-45a1-901a-abb27ac31509",
+        "573edfbe-d3e5-4b35-b48d-5e32a5550455",
+        "dee401da-b6ff-44ba-aaca-aff1478f72ba",
+        "3084f765-fd62-4f54-8a21-ad69ac2d4c83",
+        "902fd083-17e2-4036-aee6-dda7ad6e4c1a",
+        "64ecf591-0dcd-4fb4-9b6d-2e518b806f30",
+        "cc83cebb-6efa-4822-96db-79be4a26db28",
+        "052269c6-f0a0-4e6b-ba6a-beb2cb9ee8b2",
+        "c7f66411-f2a8-4783-b9b9-8088346141b3",
+        "0e1799c5-0a71-4c2c-a377-a8e1d5c58435",
+        "96d0506d-a6a1-4285-b4d7-d72b88e516e3",
+        "4a98157f-b798-4d60-a693-cd4481cd3278",
+        "1280d6aa-84c0-49a0-b337-3459953045ed",
+        "7e13a136-1924-42f2-ad28-378af6cfbb35",
+        "f49d0844-da8d-4967-8fe6-b03b0e57b6ba"
+      ]
+    }
+  },
+  {
+    "itemName": "Get User Role ID",
+    "urlPath": "user-management/combined/user-roles/v2",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.063813207,
+        "pagination": {
+          "offset": 0,
+          "limit": 100,
+          "total": 6
+        },
+        "powered_by": "cs.flightcontrolapi",
+        "trace_id": "6a780bb7-2feb-4af4-8e57-bbc8a2fd77db"
+      },
+      "resources": [
+        {
+          "uuid": "4a98157f-b798-4d60-a693-cd4481cd3278",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "role_id": "8865e509104d423eb9d813493b8feeac",
+          "role_name": "API Admin",
+          "grant_type": "direct"
+        },
+        {
+          "uuid": "4a98157f-b798-4d60-a693-cd4481cd3278",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "role_id": "app_developer",
+          "role_name": "App Developer",
+          "grant_type": "direct"
+        },
+        {
+          "uuid": "4a98157f-b798-4d60-a693-cd4481cd3278",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "role_id": "falconhost_admin",
+          "role_name": "Falcon Administrator",
+          "grant_type": "direct"
+        },
+        {
+          "uuid": "4a98157f-b798-4d60-a693-cd4481cd3278",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "role_id": "falconhost_analyst",
+          "role_name": "Falcon Analyst",
+          "grant_type": "direct"
+        },
+        {
+          "uuid": "4a98157f-b798-4d60-a693-cd4481cd3278",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "role_id": "response_workflow_author",
+          "role_name": "Workflow Author",
+          "grant_type": "direct"
+        },
+        {
+          "uuid": "4a98157f-b798-4d60-a693-cd4481cd3278",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "role_id": "workflow_executor",
+          "role_name": "Workflow Executor",
+          "grant_type": "direct"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Retrieve user info",
+    "urlPath": "user-management/entities/users/GET/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.038229328,
+        "powered_by": "cs.flightcontrolapi",
+        "trace_id": "1f392d08-bfc8-4438-b158-22cfd7881e67"
+      },
+      "resources": [
+        {
+          "uuid": "4a98157f-b798-4d60-a693-cd4481cd3278",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "uid": "shunmugavel.ss@zohocorp.com",
+          "status": "active",
+          "first_name": "Shunmu",
+          "last_name": "S",
+          "last_login_at": "2025-09-02T13:18:50.942582Z",
+          "factors": [
+            "TOTP"
+          ],
+          "created_at": "2025-08-22T13:37:48.040113Z",
+          "updated_at": "2025-08-22T13:39:25.428183Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Revoke",
+    "urlPath": "user-management/entities/user-role-actions/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.83225249,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "cs.flightcontrolapi",
+        "trace_id": "aaebcf66-fc15-4de0-9cd4-10ba3f28e66a"
+      }
+    }
+  },
+  {
+    "itemName": "Get Available Role id",
+    "urlPath": "user-management/queries/roles/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.032451171,
+        "powered_by": "cs.flightcontrolapi",
+        "trace_id": "7e0c3470-6d3e-4763-8a8a-21fec19b983e"
+      },
+      "resources": [
+        "8865e509104d423eb9d813493b8feeac",
+        "firewall_manager",
+        "data_protection_analyst",
+        "content_control_manager",
+        "security_lead",
+        "intel_basic_analyst",
+        "connector_viewer",
+        "kestrel_user",
+        "risk_manager",
+        "billing_dashboard_admin",
+        "data_protection_forensics_manager",
+        "remote_responder_three",
+        "xdr_analyst_read_only",
+        "discover_admin",
+        "falconhost_admin",
+        "falcon_console_guest",
+        "binarly_user",
+        "falconhost_investigator",
+        "scheduled_report_analyst",
+        "data_protection_admin",
+        "falconhost_read_only",
+        "xdr_admin",
+        "binarly_admin",
+        "workflow_executor",
+        "dashboard_admin",
+        "endpoint_manager",
+        "remediation_manager",
+        "falconhost_analyst",
+        "intel_admin",
+        "xdr_analyst",
+        "help_desk",
+        "event_viewer",
+        "xdr_security_lead",
+        "desktop_support",
+        "app_user",
+        "connector_manager",
+        "remote_responder_one",
+        "remote_responder",
+        "discover_analyst",
+        "quarantine_manager",
+        "prevention_hashes_manager",
+        "prevention_policy_manager",
+        "scheduled_report_admin",
+        "kestrel_scheduled_reports_admin",
+        "app_developer",
+        "response_workflow_author",
+        "custom_ioas_manager"
+      ]
+    }
+  },
+  {
+    "itemName": "Reset Password",
+    "urlPath": "user-management/entities/user-actions/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.113779158,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "cs.flightcontrolapi",
+        "trace_id": "d5c9984d-3129-4d58-98ec-62621e89bd41"
+      }
+    }
+  },
+  {
+    "itemName": "Kill Process",
+    "urlPath": "real-time-response/entities/active-responder-command/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.04495603,
+        "powered_by": "empower-api",
+        "trace_id": "e9a9f871-6499-4e6f-a242-cfd7f47aac5d"
+      },
+      "resources": [
+        {
+          "session_id": "b8b55b9c-04fa-48e8-bfa3-bb7705b19233",
+          "cloud_request_id": "63437031-dc73-44b4-b67a-7911dd5b2602",
+          "queued_command_offline": false
+        }
+      ],
+      "errors": null
+    }
+  },
+  {
+    "itemName": "List Network Stats",
+    "urlPath": "real-time-response/entities/active-responder-command/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.067541401,
+        "powered_by": "empower-api",
+        "trace_id": "f14e4e67-59d3-4f8a-bde0-5ebefeabfc1f"
+      },
+      "resources": [
+        {
+          "session_id": "71c7ec17-5aa1-49cb-a892-b946efff37d4",
+          "cloud_request_id": "bc5af78c-8df3-40e2-951e-cd1f09ccfa61",
+          "queued_command_offline": false
+        }
+      ],
+      "errors": null
+    }
+  },
+  {
+    "itemName": "List Processes",
+    "urlPath": "real-time-response/entities/active-responder-command/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.293255632,
+        "powered_by": "empower-api",
+        "trace_id": "f806e178-f3cc-424f-89bb-1a39ce87f6c8"
+      },
+      "resources": [
+        {
+          "session_id": "7e9bbe95-c20e-4e84-904b-34d91b9634fc",
+          "cloud_request_id": "4e5f4bdd-59ff-4f76-b7bf-eecb1a5cf650",
+          "queued_command_offline": false
+        }
+      ],
+      "errors": null
+    }
+  },
+  {
+    "itemName": "Create Session",
+    "urlPath": "real-time-response/entities/sessions/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 1.492045515,
+        "powered_by": "empower-api",
+        "trace_id": "08312971-afbf-4341-b417-01e385349a01"
+      },
+      "resources": [
+        {
+          "session_id": "d5a390e5-8a2b-4a5c-a2d4-5ef5cf5c34e7",
+          "device_id": "3d42a5754b9b473987133669e72504b9",
+          "platform": "Windows",
+          "scripts": [
+            {
+              "command": "cat",
+              "description": "Read a file from disk and display as ASCII or hex",
+              "examples": "    C:\\> cat c:\\mytextfile.txt\r\n        Display the contents of the text file (ASCII encoding)\r\n    C:\\> cat c:\\windows\\system32\\cmd.exe 100 -ShowHex\r\n        Display the first 100 hexadecimal characters for cmd.exe",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": [
+                {
+                  "id": 7,
+                  "created_at": "2023-03-27T23:38:50Z",
+                  "updated_at": "2023-03-27T23:38:50Z",
+                  "script_id": 6,
+                  "arg_type": "arg",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "Path",
+                  "description": "File to concatenate",
+                  "default_value": "",
+                  "required": true,
+                  "sequence": 1,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                },
+                {
+                  "id": 51,
+                  "created_at": "2023-03-27T23:38:50Z",
+                  "updated_at": "2023-03-27T23:38:50Z",
+                  "script_id": 6,
+                  "arg_type": "arg",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "Count",
+                  "description": "Number of bytes to read (max=32768)",
+                  "default_value": "",
+                  "required": false,
+                  "sequence": 2,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                },
+                {
+                  "id": 52,
+                  "created_at": "2023-03-27T23:38:50Z",
+                  "updated_at": "2023-03-27T23:38:50Z",
+                  "script_id": 6,
+                  "arg_type": "arg",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "Offset",
+                  "description": "Offset (in byte value) to start reading from",
+                  "default_value": "",
+                  "required": false,
+                  "sequence": 3,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                },
+                {
+                  "id": 53,
+                  "created_at": "2023-03-27T23:38:50Z",
+                  "updated_at": "2023-03-27T23:38:50Z",
+                  "script_id": 6,
+                  "arg_type": "flag",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "ShowHex",
+                  "description": "Show the results in hexadecimal format instead of ASCII",
+                  "default_value": "",
+                  "required": false,
+                  "sequence": 4,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                }
+              ]
+            },
+            {
+              "command": "cd",
+              "description": "Change the current working directory",
+              "examples": "    C:\\> cd C:\\Users\\Administrator\r\n        Change working directory to 'C:\\Users\\Administrator'\r\n    C:\\Users> cd ..\\Windows\r\n        Change working directory to 'C:\\Windows'",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": [
+                {
+                  "id": 8,
+                  "created_at": "2018-11-08T18:27:18Z",
+                  "updated_at": "2018-11-08T18:27:18Z",
+                  "script_id": 8,
+                  "arg_type": "arg",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "Path",
+                  "description": "Relative or absolute directory",
+                  "default_value": "",
+                  "required": true,
+                  "sequence": 1,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                }
+              ]
+            },
+            {
+              "command": "env",
+              "description": "Get environment variables for all scopes (Machine / User / Process)",
+              "examples": "",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": []
+            },
+            {
+              "command": "eventlog",
+              "description": "Inspect event logs.",
+              "examples": "",
+              "internal_only": false,
+              "runnable": false,
+              "sub_commands": [
+                {
+                  "command": "backup",
+                  "description": "Back up the specified event log to a file (.evtx) on disk",
+                  "examples": "    C:\\>eventlog backup System c:\\system_eventlog\r\n        Backs up the entire 'System' event log to file 'c:\\system_eventlog.evtx",
+                  "internal_only": false,
+                  "runnable": true,
+                  "sub_commands": [],
+                  "args": [
+                    {
+                      "id": 519,
+                      "created_at": "2019-05-09T23:55:03Z",
+                      "updated_at": "2019-05-09T23:55:03Z",
+                      "script_id": 470,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Name",
+                      "description": "Name of the event log, for example \"Application\", \"System\"",
+                      "default_value": "",
+                      "required": true,
+                      "sequence": 1,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    },
+                    {
+                      "id": 520,
+                      "created_at": "2019-05-09T23:55:03Z",
+                      "updated_at": "2019-05-09T23:55:03Z",
+                      "script_id": 470,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Filename",
+                      "description": "Target file on disk",
+                      "default_value": "",
+                      "required": true,
+                      "sequence": 2,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    }
+                  ]
+                },
+                {
+                  "command": "list",
+                  "description": "Event log list: show available event log sources",
+                  "examples": "    C:\\> eventlog list\r\n        Displays available event log names",
+                  "internal_only": false,
+                  "runnable": true,
+                  "sub_commands": [],
+                  "args": []
+                },
+                {
+                  "command": "view",
+                  "description": "View most recent N events in a given event log",
+                  "examples": "    C:\\> eventlog view Application 5\r\n        Displays the 5 most recent event log entries in the \"Application\" event source log",
+                  "internal_only": false,
+                  "runnable": true,
+                  "sub_commands": [],
+                  "args": [
+                    {
+                      "id": 35,
+                      "created_at": "2018-05-01T19:38:30Z",
+                      "updated_at": "2018-05-01T19:38:30Z",
+                      "script_id": 25,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Name",
+                      "description": "Name of the event log, for example \"Application\", \"System\"",
+                      "default_value": "",
+                      "required": true,
+                      "sequence": 1,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    },
+                    {
+                      "id": 36,
+                      "created_at": "2018-05-01T19:38:30Z",
+                      "updated_at": "2018-05-01T19:38:30Z",
+                      "script_id": 25,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Count",
+                      "description": "Optional number of entries to return. Default:100 Max=500",
+                      "default_value": "",
+                      "required": false,
+                      "sequence": 2,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    },
+                    {
+                      "id": 37,
+                      "created_at": "2018-05-01T19:38:30Z",
+                      "updated_at": "2018-05-01T19:38:30Z",
+                      "script_id": 25,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "SourceName",
+                      "description": "Optional name of the event source, e.x. \"WinLogon\"",
+                      "default_value": "",
+                      "required": false,
+                      "sequence": 3,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    }
+                  ]
+                },
+                {
+                  "command": "export",
+                  "description": "Export the specified event log to a file (.csv) on disk",
+                  "examples": "    C:\\>eventlog export System c:\\system_eventlog\r\n        Exports the entire 'System' event log to file 'c:\\system_eventlog.csv",
+                  "internal_only": false,
+                  "runnable": true,
+                  "sub_commands": [],
+                  "args": [
+                    {
+                      "id": 38,
+                      "created_at": "2020-03-17T18:11:22Z",
+                      "updated_at": "2020-03-17T18:11:22Z",
+                      "script_id": 26,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Name",
+                      "description": "Name of the event log, for example \"Application\", \"System\"",
+                      "default_value": "",
+                      "required": true,
+                      "sequence": 1,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    },
+                    {
+                      "id": 39,
+                      "created_at": "2020-03-17T18:11:22Z",
+                      "updated_at": "2020-03-17T18:11:22Z",
+                      "script_id": 26,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Filename",
+                      "description": "Target file on disk",
+                      "default_value": "",
+                      "required": true,
+                      "sequence": 2,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    }
+                  ]
+                }
+              ],
+              "args": []
+            },
+            {
+              "command": "filehash",
+              "description": "Generate the MD5, SHA1, and SHA256 hashes of a file",
+              "examples": "C:\\> filehash C:\\Windows\\System32\\cmd.exe\r\n\r\nFilename : C:\\Windows\\System32\\cmd.exe\r\nMD5      : 4E2ACF4F8A396486AB4268C94A6A245F\r\nSHA1     : 3CE71813199ABAE99348F61F0CAA34E2574F831C\r\nSHA256   : 9A7C58BD98D70631AA1473F7B57B426DB367D72429A5455B433A05EE251F3236",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": [
+                {
+                  "id": 72,
+                  "created_at": "2020-03-17T18:10:50Z",
+                  "updated_at": "2020-03-17T18:10:50Z",
+                  "script_id": 45,
+                  "arg_type": "arg",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "Path",
+                  "description": "File to hash",
+                  "default_value": "",
+                  "required": true,
+                  "sequence": 1,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                }
+              ]
+            },
+            {
+              "command": "getsid",
+              "description": "Enumerate local users and Security Identifiers (SID)",
+              "examples": ">getsid\r\nUserName       SID\r\n--------       ---\r\nAdmin          S-1-5-21-3647622582-3640773343-236108083-1031\r\nSomeUser       S-1-5-21-2386721964-1418511206-4037700370-5267\r\nNetworkService S-1-5-20\r\nLocalService   S-1-5-19\r\nsystemprofile  S-1-5-18\r\n\r\n>getsid some\r\nUserName       SID\r\n--------       ---\r\nSomeUser       S-1-5-21-2386721964-1418511206-4037700370-5267",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": [
+                {
+                  "id": 42,
+                  "created_at": "2018-05-10T16:22:42Z",
+                  "updated_at": "2018-05-10T16:22:42Z",
+                  "script_id": 29,
+                  "arg_type": "arg",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "UserName",
+                  "description": "Partial or full username to filter results",
+                  "default_value": "",
+                  "required": false,
+                  "sequence": 1,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                }
+              ]
+            },
+            {
+              "command": "ipconfig",
+              "description": "Show network configuration information",
+              "examples": "",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": []
+            },
+            {
+              "command": "ls",
+              "description": "Display the contents of the specified path",
+              "examples": "    C:\\Windows> ls\r\n        Displays the contents of the 'C:\\Windows' directory\r\n    C:\\Windows> ls ..\\Users\r\n        Displays the contents of the 'C:\\Users' directory",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": [
+                {
+                  "id": 12,
+                  "created_at": "2023-07-19T23:54:12Z",
+                  "updated_at": "2023-07-19T23:54:12Z",
+                  "script_id": 14,
+                  "arg_type": "arg",
+                  "data_type": "string",
+                  "requires_value": false,
+                  "arg_name": "Path",
+                  "description": "Directory to list",
+                  "default_value": ".",
+                  "required": false,
+                  "sequence": 1,
+                  "options": null,
+                  "encoding": "",
+                  "command_level": "non-destructive"
+                }
+              ]
+            },
+            {
+              "command": "mount",
+              "description": "List mounted filesystem volumes",
+              "examples": "    C:\\> mount\r\n        Display local mounted volumes",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": []
+            },
+            {
+              "command": "netstat",
+              "description": "Display network statistics and active connections",
+              "examples": "",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": []
+            },
+            {
+              "command": "ps",
+              "description": "Display process information",
+              "examples": " C:\\> ps\r\n\r\nName                    Id StartTime  (UTC-6)           WorkingMemory(kb) CPU(s) HandleCount Path\r\n ----                    -- ---------             ----------------- ------ ----------- ----\r\n cmd                   8140 6/11/2018 9:57:48 AM              4,664   0.08          73 C:\\WINDOWS\\system32\\cmd.exe\r\n conhost               4684 6/11/2018 8:44:11 AM             18,948  15.08         254 C:\\WINDOWS\\system32\\conhost.exe\r\n dwm                    424 6/11/2018 8:39:20 AM             85,188  13.53         552 C:\\WINDOWS\\system32\\dwm.exe\r\n explorer              5048 6/11/2018 8:39:34 AM            127,384  32.08        2393 C:\\WINDOWS\\Explorer.EXE\r\n\r\nFor example, the 'explorer' process has the following characteristics:\r\n> Process Id is 5048. Use this value in subsequent commands like \"kill” or \"memdump\"\r\n> Process has been running since 6/11 8:39 AM (local machine time)\r\n> It's using 127 MB of working memory (RAM)\r\n> During its lifetime, the process has used a total of 32 seconds of CPU time across all cores\r\n> Has 2,393 object handles, which include: registry, files, threads, and other resources\r\n> Executable path on disk is C:\\WINDOWS\\Explorer.EXE\r\n",
+              "internal_only": false,
+              "runnable": true,
+              "sub_commands": [],
+              "args": []
+            },
+            {
+              "command": "pwd",
+              "description": "Get current working directory",
+              "examples": "",
+              "internal_only": true,
+              "runnable": true,
+              "sub_commands": [],
+              "args": []
+            },
+            {
+              "command": "reg",
+              "description": "Windows registry manipulation.",
+              "examples": "",
+              "internal_only": false,
+              "runnable": false,
+              "sub_commands": [
+                {
+                  "command": "query",
+                  "description": "Query a registry subkey or value",
+                  "examples": "    C:\\> reg query\r\n        Enumerates root hives. \"HKEY_LOCAL_MACHINE\" and \"HKEY_USERS\" are most commonly used.\r\n    C:\\> reg query HKLM\\Software\\SomeKey\r\n        Returns the subkeys and all value pairs of SomeKey\r\n    C:\\> reg query HKLM\\Software\\SomeKey SomeValue\r\n        Returns the data of SomeValue",
+                  "internal_only": false,
+                  "runnable": true,
+                  "sub_commands": [],
+                  "args": [
+                    {
+                      "id": 43,
+                      "created_at": "2020-09-21T22:18:25Z",
+                      "updated_at": "2020-09-21T22:18:25Z",
+                      "script_id": 30,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Subkey",
+                      "description": "Registry subkey full path",
+                      "default_value": "",
+                      "required": false,
+                      "sequence": 1,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    },
+                    {
+                      "id": 44,
+                      "created_at": "2020-09-21T22:18:25Z",
+                      "updated_at": "2020-09-21T22:18:25Z",
+                      "script_id": 30,
+                      "arg_type": "arg",
+                      "data_type": "string",
+                      "requires_value": false,
+                      "arg_name": "Value",
+                      "description": "Name of value to query",
+                      "default_value": "",
+                      "required": false,
+                      "sequence": 2,
+                      "options": null,
+                      "encoding": "",
+                      "command_level": "non-destructive"
+                    }
+                  ]
+                }
+              ],
+              "args": []
+            }
+          ],
+          "existing_aid_sessions": 1,
+          "created_at": "2025-09-18T07:34:39.983442233Z",
+          "pwd": "C:\\",
+          "offline_queued": false
+        }
+      ],
+      "errors": null
+    }
+  },
+  {
+    "itemName": "Get Detection for Incident",
+    "urlPath": "incidents/entities/incidents/GET/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.004314854,
+        "powered_by": "incident-api",
+        "trace_id": "c4fe1986-7422-42b6-958d-f45ac426a1d9"
+      },
+      "resources": [
+        {
+          "incident_id": "inc:0cbe4eb586614ae087a93b30f4974c97:a62d60078519434ba824aa24a9802f21",
+          "incident_type": 1,
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "host_ids": [
+            "0cbe4eb586614ae087a93b30f4974c97"
+          ],
+          "hosts": [
+            {
+              "device_id": "0cbe4eb586614ae087a93b30f4974c97",
+              "cid": "6d910a2d8a2b47adababaecce2c242fc",
+              "agent_load_flags": "1",
+              "agent_local_time": "2025-07-01T10:44:44.043Z",
+              "agent_version": "7.25.19706.0",
+              "bios_manufacturer": "Dell Inc.",
+              "bios_version": "1.36.0",
+              "config_id_base": "65994767",
+              "config_id_build": "19706",
+              "config_id_platform": "3",
+              "external_ip": "182.74.243.49",
+              "hostname": "MADHAN-19287T",
+              "first_seen": "2025-03-12T10:18:49Z",
+              "last_login_timestamp": "2025-07-01T05:29:07Z",
+              "last_login_user": "madhan",
+              "last_seen": "2025-07-03T12:51:19Z",
+              "local_ip": "172.21.254.191",
+              "mac_address": "74-78-27-ec-c8-51",
+              "machine_domain": "ErpQA2.com",
+              "major_version": "10",
+              "minor_version": "0",
+              "os_version": "Windows 11",
+              "platform_id": "0",
+              "platform_name": "Windows",
+              "product_type": "1",
+              "product_type_desc": "Workstation",
+              "site_name": "Default-First-Site-Name",
+              "status": "normal",
+              "system_manufacturer": "Dell Inc.",
+              "system_product_name": "Precision 5540",
+              "modified_timestamp": "2025-07-03T12:55:14Z"
+            }
+          ],
+          "created": "2025-07-03T12:59:20Z",
+          "start": "2025-07-03T12:58:09Z",
+          "end": "2025-07-03T12:58:09Z",
+          "state": "closed",
+          "email_state": "START",
+          "status": 20,
+          "tactics": [
+            "Malware"
+          ],
+          "techniques": [
+            "Malicious File"
+          ],
+          "objectives": [
+            "Falcon Detection Method"
+          ],
+          "modified_timestamp": "2025-07-03T13:59:41.454Z",
+          "users": [
+            "madhan"
+          ],
+          "fine_score": 36
+        }
+      ],
+      "errors": []
+    }
+  },
+  {
+    "itemName": "Get Quarantined Files",
+    "urlPath": "quarantine/entities/quarantined-files/GET/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.005105126,
+        "powered_by": "quarantine",
+        "trace_id": "af7ec9cb-cd9d-41be-8fea-d4708c6242f2"
+      },
+      "resources": [
+        {
+          "id": "2f97893146144fadb2c34ab8e66f40af_629ff05b7396cd0278ac345008b1e9246a6511da973e3e7eb630c5890758c15a",
+          "aid": "2f97893146144fadb2c34ab8e66f40af",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "sha256": "629ff05b7396cd0278ac345008b1e9246a6511da973e3e7eb630c5890758c15a",
+          "paths": [
+            {
+              "path": "\\Device\\HarddiskVolume3\\Users\\zoho\\AppData\\Roaming\\Apprunner\\ScriptExec\\EasyAsVPNgo.exe",
+              "filename": "EasyAsVPNgo.exe",
+              "state": "quarantined"
+            }
+          ],
+          "state": "quarantined",
+          "detect_ids": [
+            "ldt:2f97893146144fadb2c34ab8e66f40af:51540632913",
+            "ldt:2f97893146144fadb2c34ab8e66f40af:51543182441",
+            "ldt:2f97893146144fadb2c34ab8e66f40af:51542399673",
+            "ldt:2f97893146144fadb2c34ab8e66f40af:51541612463"
+          ],
+          "alert_ids": [
+            "ind:2f97893146144fadb2c34ab8e66f40af:121839206122-5790-66729232",
+            "ind:2f97893146144fadb2c34ab8e66f40af:116066429932-5790-56889872",
+            "ind:2f97893146144fadb2c34ab8e66f40af:116064405207-5819-56883984",
+            "ind:2f97893146144fadb2c34ab8e66f40af:121860611471-5819-66769680",
+            "ind:2f97893146144fadb2c34ab8e66f40af:121788182182-5819-66727184"
+          ],
+          "hostname": "TSI-HR-TEST-45",
+          "username": "zoho",
+          "date_updated": "2025-08-20T06:01:21Z",
+          "date_created": "2025-08-19T02:08:48Z"
+        }
+      ],
+      "errors": []
+    }
+  },
+  {
+    "itemName": "Apply Quarantine File Action",
+    "urlPath": "quarantine/entities/quarantined-files/v1",
+    "method": "PATCH",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.188245092,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "quarantine",
+        "trace_id": "70f9b278-b175-40f5-9157-0543af69cf96"
+      }
+    }
+  },
+  {
+    "itemName": "Create ODS Scan",
+    "urlPath": "ods/entities/scans/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 1.43412815,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "svc-odsapi",
+        "trace_id": "7b08f7df-a580-44e0-a7db-38938049625d"
+      },
+      "resources": [
+        {
+          "id": "790c5793ba0542489ef2bcd19200b496",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "profile_id": "9d237acfdc9b49e1a1af8ec9365b8add",
+          "description": "Weekly malware scan for HR endpoints",
+          "file_paths": [
+            "C:\\Program Files (x86)"
+          ],
+          "scan_inclusions": [
+            "C:/Users"
+          ],
+          "initiated_from": "falcon_adhoc",
+          "quarantine": true,
+          "cpu_priority": 1,
+          "preemption_priority": 1,
+          "filecount": {},
+          "missing_host_count": 0,
+          "targeted_host_count": 1,
+          "status": "pending",
+          "host_groups": [
+            "cf12e080886048c89322f73396a1ee16"
+          ],
+          "endpoint_notification": true,
+          "pause_duration": 2,
+          "max_duration": 2,
+          "cloud_ml_level_detection": 2,
+          "cloud_ml_level_prevention": 2,
+          "cloud_pup_adware_level_detection": 1,
+          "cloud_pup_adware_level_prevention": 1,
+          "policy_setting": [
+            26439818675124,
+            26439818675125,
+            26439818675157,
+            26439818675158,
+            26439818675182,
+            26439818675183,
+            26439818675190,
+            26439818675191,
+            26439818675196,
+            26439818675197,
+            26439818675204,
+            26439818675205,
+            26405458936760,
+            26405458936761,
+            26405458936793,
+            26405458936794,
+            26405458936818,
+            26405458936819,
+            26405458936825,
+            26405458936826,
+            26405458936832,
+            26405458936833,
+            26405458936840,
+            26405458936841,
+            26439818676322,
+            26439818676330,
+            26405458937958,
+            26405458937966,
+            26456998543793,
+            26456998544045,
+            26456998543652,
+            26456998543653,
+            26456998543656,
+            26456998543654,
+            26456998543950,
+            26456998543963,
+            26456998543811
+          ],
+          "created_on": "2025-09-15T11:21:16.98034585Z",
+          "created_by": "33bc4f62d4414e95a541f04eff135903",
+          "last_updated": "2025-09-15T11:21:16.980376273Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Delete ODS Scheduled Scan",
+    "urlPath": "ods/entities/scheduled-scans/v1",
+    "method": "DELETE",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 1.104642379,
+        "powered_by": "svc-odsapi",
+        "trace_id": "087ad37a-4bce-4e04-a549-03d75267dfb4"
+      },
+      "resources": [
+        "89cb4edcc28b4e9da5ab3aa28e152e5d"
+      ],
+      "errors": null
+    }
+  },
+  {
+    "itemName": "Create ODS Scheduled Scan",
+    "urlPath": "ods/entities/scheduled-scans/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 1.189561323,
+        "powered_by": "svc-odsapi",
+        "trace_id": "84fa50c3-e700-4cd8-9567-657da2d0e99a"
+      },
+      "resources": [
+        {
+          "id": "89cb4edcc28b4e9da5ab3aa28e152e5d",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "description": "Scheduled malware scan endpoints",
+          "file_paths": [
+            "C:\\Windows\\"
+          ],
+          "initiated_from": "cloud_scheduled",
+          "quarantine": true,
+          "cpu_priority": 1,
+          "preemption_priority": 15,
+          "metadata": [
+            {
+              "host_id": "3d42a5754b9b473987133669e72504b9",
+              "last_updated": "2025-09-15T11:43:46.655429196Z"
+            }
+          ],
+          "targeted_host_count": 1,
+          "status": "scheduled",
+          "host_groups": [
+            "cf12e080886048c89322f73396a1ee16"
+          ],
+          "endpoint_notification": true,
+          "pause_duration": 2,
+          "max_duration": 2,
+          "max_file_size": 60,
+          "sensor_ml_level_detection": 2,
+          "sensor_ml_level_prevention": 2,
+          "cloud_ml_level_detection": 2,
+          "cloud_ml_level_prevention": 2,
+          "policy_setting": [
+            26439818674573,
+            26439818674574,
+            26439818675074,
+            26405458936702,
+            26405458936703,
+            26405458936707,
+            26439818675124,
+            26439818675125,
+            26439818675157,
+            26439818675158,
+            26439818675182,
+            26439818675183,
+            26439818675190,
+            26439818675191,
+            26439818675196,
+            26439818675197,
+            26439818675204,
+            26439818675205,
+            26405458936760,
+            26405458936761,
+            26405458936793,
+            26405458936794,
+            26405458936818,
+            26405458936819,
+            26405458936825,
+            26405458936826,
+            26405458936832,
+            26405458936833,
+            26405458936840,
+            26405458936841,
+            26456998543793,
+            26456998544045,
+            26456998543652,
+            26456998543653,
+            26456998543656,
+            26456998543654,
+            26456998543950,
+            26456998543963,
+            26456998543811
+          ],
+          "schedule": {
+            "start_timestamp": "2025-09-16T21:00",
+            "interval": 1
+          },
+          "created_on": "2025-09-15T11:43:46.655429196Z",
+          "created_by": "33bc4f62d4414e95a541f04eff135903",
+          "last_updated": "2025-09-15T11:43:46.684697386Z",
+          "deleted": false
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Query ODS Malicious Files",
+    "urlPath": "ods/entities/malicious-files/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.009055571,
+        "powered_by": "svc-odsapi",
+        "trace_id": "5c2f1a3a-efe1-4637-be7b-c3411bdfea01"
+      },
+      "resources": [
+        {
+          "id": "a2bc30602e554549b8734dcedc2ed89d",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "scan_id": "d1427a8760d74227aaac1ebb73205df0",
+          "host_id": "d265d7d4dd474b2490b6cbf3204396bf",
+          "host_scan_id": "0ff780307a4b334690dea8f58d1a4d6b",
+          "filepath": "E:\\DELL backup\\BALAJI\\source\\repos\\Proj1\\Proj1\\bin\\Debug\\Proj1.dll",
+          "filename": "Proj1.dll",
+          "hash": "b1a1c26f981b34074625b7c613c652eaffee59c6f4ac916d6eb28de5a4f50464",
+          "pattern_id": 4005,
+          "severity": 50,
+          "quarantined": true,
+          "last_updated": "2025-09-24T13:56:35.145749734Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Query ODS Scan",
+    "urlPath": "ods/entities/scans/v2",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.06117101,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "svc-odsapi",
+        "trace_id": "74cb04ea-9f12-44b2-8cff-faa8d34830ef"
+      },
+      "resources": [
+        {
+          "id": "312e82760c514cc9acaa9697788f4a7e",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "profile_id": "d9dab618fdc740c3866a12ceab25b88f",
+          "description": "Weekly malware scan for HR endpoints",
+          "file_paths": [
+            "C:\\Program Files (x86)"
+          ],
+          "scan_inclusions": [
+            "C:/Users"
+          ],
+          "initiated_from": "falcon_adhoc",
+          "quarantine": true,
+          "cpu_priority": 1,
+          "preemption_priority": 1,
+          "filecount": {
+            "scanned": 0,
+            "malicious": 0,
+            "quarantined": 0,
+            "skipped": 0,
+            "traversed": 20184
+          },
+          "affected_hosts_count": 0,
+          "missing_host_count": 0,
+          "targeted_host_count": 1,
+          "incomplete_host_count": 0,
+          "completed_host_count": 1,
+          "started_host_count": 0,
+          "not_started_host_count": 0,
+          "status": "completed",
+          "host_groups": [
+            "cf12e080886048c89322f73396a1ee16"
+          ],
+          "endpoint_notification": true,
+          "pause_duration": 2,
+          "max_duration": 2,
+          "sensor_ml_level_detection": 2,
+          "sensor_ml_level_prevention": 2,
+          "cloud_ml_level_detection": 2,
+          "cloud_ml_level_prevention": 2,
+          "policy_setting": [
+            26439818674573,
+            26439818674574,
+            26439818675074,
+            26405458936702,
+            26405458936703,
+            26405458936707,
+            26439818675124,
+            26439818675125,
+            26439818675157,
+            26439818675158,
+            26439818675182,
+            26439818675183,
+            26439818675190,
+            26439818675191,
+            26439818675196,
+            26439818675197,
+            26439818675204,
+            26439818675205,
+            26405458936760,
+            26405458936761,
+            26405458936793,
+            26405458936794,
+            26405458936818,
+            26405458936819,
+            26405458936825,
+            26405458936826,
+            26405458936832,
+            26405458936833,
+            26405458936840,
+            26405458936841,
+            26456998543793,
+            26456998544045,
+            26456998543652,
+            26456998543653,
+            26456998543656,
+            26456998543654,
+            26456998543950,
+            26456998543963,
+            26456998543811
+          ],
+          "scan_started_on": "2025-12-02T08:41:05.34Z",
+          "scan_completed_on": "2025-12-02T08:41:05.966Z",
+          "created_on": "2025-12-02T08:41:02.105149194Z",
+          "created_by": "33bc4f62d4414e95a541f04eff135903",
+          "last_updated": "2025-12-02T08:41:16.260816221Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Query ODS Scan Hosts",
+    "urlPath": "ods/entities/scan-hosts/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.04893896,
+        "powered_by": "svc-odsapi",
+        "trace_id": "bb3427aa-e028-4c7c-894b-328f3127274d"
+      },
+      "resources": [
+        {
+          "id": "db22c0c1767028dc825dcc040a23e364",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "scan_id": "312e82760c514cc9acaa9697788f4a7e",
+          "profile_id": "d9dab618fdc740c3866a12ceab25b88f",
+          "host_id": "56b24fe7ed2344d987080a7f22f78c17",
+          "host_scan_id": "11638d256276ef43bc0f4421f42979d4",
+          "filecount": {
+            "scanned": 0,
+            "malicious": 0,
+            "quarantined": 0,
+            "skipped": 0,
+            "traversed": 20184
+          },
+          "status": "completed",
+          "started_on": "2025-12-02T08:41:05.34069605Z",
+          "completed_on": "2025-12-02T08:41:05.96692594Z",
+          "last_updated": "2025-12-02T08:41:06.033303311Z"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Create ML Exclusions",
+    "urlPath": "policy/entities/ml-exclusions/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 1.63307939,
+        "trace_id": "11975d6d-c6a5-4844-9aec-74f29f8b47c7"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "4693a058d3fd4331a29a0b49f30a2da9",
+          "value": "**/Log360.exe",
+          "regexp_value": "(?:[^/\\\\]*[/\\\\])*Log360\\.exe",
+          "value_hash": "318ca3a019c497a1aba537cb730d2a86",
+          "excluded_from": [
+            "blocking",
+            "extraction",
+            "UploadstoCrowdStrike"
+          ],
+          "groups": [
+            {
+              "id": "cf12e080886048c89322f73396a1ee16",
+              "group_type": "dynamic",
+              "name": "API-Testing-Group",
+              "description": "",
+              "assignment_rule": "hostname:'WIN-DDHJPS3L2L9'",
+              "created_by": "shunmugavel.ss@zohocorp.com",
+              "created_timestamp": "2025-08-23T08:46:30.474463927Z",
+              "modified_by": "shunmugavel.ss@zohocorp.com",
+              "modified_timestamp": "2025-09-12T13:31:10.989727149Z"
+            }
+          ],
+          "applied_globally": false,
+          "last_modified": "2025-09-16T05:28:43.8236151Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_on": "2025-09-16T05:28:43.8236151Z",
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Update ML Exclusions",
+    "urlPath": "policy/entities/ml-exclusions/v1",
+    "method": "PATCH",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 2.29513749,
+        "trace_id": "9c3b2430-4b2f-460c-97e5-e01977ef2b75"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "4693a058d3fd4331a29a0b49f30a2da9",
+          "value": "**/Downloads/Log360.exe",
+          "regexp_value": "(?:[^/\\\\]*[/\\\\])*Downloads\\/Log360\\.exe",
+          "value_hash": "d83ce05a921269b5ee0f8c6e5042601f",
+          "excluded_from": [
+            "blocking",
+            "extraction",
+            "UploadstoCrowdStrike"
+          ],
+          "groups": [
+            {
+              "id": "cf12e080886048c89322f73396a1ee16",
+              "group_type": "dynamic",
+              "name": "API-Testing-Group",
+              "description": "",
+              "assignment_rule": "hostname:'WIN-DDHJPS3L2L9'",
+              "created_by": "shunmugavel.ss@zohocorp.com",
+              "created_timestamp": "2025-08-23T08:46:30.474463927Z",
+              "modified_by": "shunmugavel.ss@zohocorp.com",
+              "modified_timestamp": "2025-09-12T13:31:10.989727149Z"
+            }
+          ],
+          "applied_globally": false,
+          "last_modified": "2025-09-16T05:35:01.993629521Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_on": "2025-09-16T05:28:43.8236151Z",
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Delete ML Exclusions",
+    "urlPath": "policy/entities/ml-exclusions/v1",
+    "method": "DELETE",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 1.1851840359999999,
+        "trace_id": "78d7014b-d475-4329-bfea-e57d7b5e06c6"
+      },
+      "resources": [
+        "4693a058d3fd4331a29a0b49f30a2da9"
+      ],
+      "errors": null
+    }
+  },
+  {
+    "itemName": "Search ML Exclusions",
+    "urlPath": "policy/entities/ml-exclusions/v1",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.026598807,
+        "trace_id": "44b42972-a185-416b-919e-6b02942f9a6a"
+      },
+      "errors": [],
+      "resources": [
+        {
+          "id": "c2d7316d2f4c456e83f2c84a789cdb69",
+          "value": "**/Log360.exe",
+          "regexp_value": "(?:[^/\\\\]*[/\\\\])*Log360\\.exe",
+          "value_hash": "318ca3a019c497a1aba537cb730d2a86",
+          "excluded_from": [
+            "blocking",
+            "extraction"
+          ],
+          "groups": [
+            {
+              "id": "cf12e080886048c89322f73396a1ee16",
+              "group_type": "dynamic",
+              "name": "API-Testing-Group",
+              "description": "",
+              "assignment_rule": "hostname:'WIN-DDHJPS3L2L9'",
+              "created_by": "shunmugavel.ss@zohocorp.com",
+              "created_timestamp": "2025-08-23T08:46:30.474463927Z",
+              "modified_by": "shunmugavel.ss@zohocorp.com",
+              "modified_timestamp": "2025-09-12T13:31:10.989727149Z"
+            }
+          ],
+          "applied_globally": false,
+          "last_modified": "2025-09-18T09:02:39.158426515Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "created_on": "2025-09-18T09:02:39.158426515Z",
+          "created_by": "api-client-id:33bc4f62d4414e95a541f04eff135903"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Create IOC",
+    "urlPath": "iocs/entities/indicators/v1",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.944364166,
+        "pagination": {
+          "limit": 0,
+          "total": 1
+        },
+        "powered_by": "ioc-manager",
+        "trace_id": "e327bd26-f0ef-4981-9df0-b91fca93a47e"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "ed84aea15aa84f2af80783df286df7d21c9fdb1fefb88b1b8f7681220516cf31",
+          "type": "sha256",
+          "value": "2473e6c7dfd2692b165892037c204e679b4046e076e040901f6c643e6bcb0b19",
+          "source": "SOC Threat Hunting",
+          "action": "detect",
+          "severity": "critical",
+          "description": "Blcok mimikatz",
+          "metadata": {
+            "filename": "mimikatz.exe",
+            "company_name": "Microsoft Corporation",
+            "original_filename": "MsMpEng.exe",
+            "file_version": "4.10.14393.0 (rs1_release.160715-1616)",
+            "file_description": "Antimalware Service Executable",
+            "product_name": "Microsoft® Windows® Operating System",
+            "product_version": "4.10.14393.0",
+            "signed": false,
+            "av_hits": 0
+          },
+          "platforms": [
+            "windows"
+          ],
+          "tags": [
+            "mimikatz",
+            "threat-hunting"
+          ],
+          "host_groups": [
+            "cf12e080886048c89322f73396a1ee16"
+          ],
+          "expiration": "2025-09-17T06:14:05.693Z",
+          "expired": false,
+          "deleted": false,
+          "applied_globally": false,
+          "from_parent": false,
+          "created_on": "2025-09-16T06:42:56.72308834Z",
+          "created_by": "33bc4f62d4414e95a541f04eff135903",
+          "modified_on": "2025-09-16T06:42:56.72308834Z",
+          "modified_by": "33bc4f62d4414e95a541f04eff135903"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Retrieve Detection",
+    "urlPath": "alerts/queries/alerts/v2",
+    "method": "GET",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.115590758,
+        "pagination": {
+          "offset": 0,
+          "limit": 5000,
+          "total": 590
+        },
+        "writes": {
+          "resources_affected": 0
+        },
+        "powered_by": "detectsapi",
+        "trace_id": "9ca4d7de0d5246958fef4a6eda8eff4d"
+      },
+      "resources": [
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:e78060d3b0b9c67a3879d6214d18e36daaba1e4e9bd115beeb3a7dbbb4c70652",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-93d44732b2224a45b7b8801152d59d0a-fb9b9ff2f74e47478568c9fb56bada48",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4407d83ee6fa46fea9ad7f16e4fe534d:35534924964-10312-2272784",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4407d83ee6fa46fea9ad7f16e4fe534d:34883594258-10335-1273616",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4407d83ee6fa46fea9ad7f16e4fe534d:34865317145-10336-1203216",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4407d83ee6fa46fea9ad7f16e4fe534d:28665733727-10538-4758544",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:cf9732f5595b510016a3893b8f708f165ff1944b00ef9150bf0ca850a0bda6ab",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-3e375d9623c04e5caa756765f050f492",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53849866302294-118-139725328",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53827089018617-10336-129372688",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53827062203922-467-129352720",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-33fd07f6fc124f889016e68182cad345",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53817564524896-459-124212240",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53813457392762-10337-121779728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53813341229787-10011-121714448",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53813024089780-10538-120849424",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:9fe398b1a31a42763254ab906c7505b516b5d696beeacd7784fb1aa90bed61b7",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:f06a1224de8c088cde68a4f3a818476bb9007cf8ae29e47ebe8c2c0b2da9f838",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:7aecc7c7a1e6af153fc9399d33c405183e294c33ef131cf8a210e115a80eb21f",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1937965158737-10103-1856784",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1936034589456-350-4207376",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:9793796cd6cda567b24386cd7bba436a8287374832c947befae7a9cda843666d",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53579873636265-55-539664",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1923954575713-10333-11455504",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1923858276298-457-11344912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1923858276298-458-11345680",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1922258274587-118-10523408",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1922992161807-10337-9814544",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1922476629195-347-9052432",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1922474414205-10267-9047824",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53569100983302-10251-183494416",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-e95c3aac94474f73ad09a42bfe317548-5e777dea17b6413b82ade6ac74505c6e",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1921783907110-10538-7271440",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:1256553545833-10333-104090896",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:1256242488380-299-98777104",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1920826651681-10335-5822992",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1920808959337-10336-5756944",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:53565422322179-10538-180308240",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:1254492226793-10335-96123408",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:1254472076347-10336-96052240",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:52e4a691cf46ad9c378691422fa863f52ae440f19d2ece7418a7a3b011a830ed",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:b449a4990b5a4652b0430fe337ef520b:994815421437-10141-218854160",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:b449a4990b5a4652b0430fe337ef520b:994815421437-10141-218853136",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:2e85e55ddf6a74cbceb9615c34ee3c21a260a427e7e8f1387acf2da81d347999",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:b449a4990b5a4652b0430fe337ef520b:951393156465-10337-193941264",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:b449a4990b5a4652b0430fe337ef520b:951389089269-10363-193871376",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:b449a4990b5a4652b0430fe337ef520b:951389089269-10447-193872912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:b449a4990b5a4652b0430fe337ef520b:951389089269-10447-193875728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-c0d812aad52240e195a80cb46e69a2e8",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1903234832786-368-8488208",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1903234832786-194-3736080",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1907205528510-10538-1759248",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1903234832786-56-673808",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1903135096470-378-1125904",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:f910648714c64a3085c99a2ea4267d56:652891844884015997-534-22187",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:f910648714c64a3085c99a2ea4267d56:652891849725291586-532-22179",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:718ad5b9026a5be92857c32deaf4e570bbe8e8856fef751979e26da05c2e6feb",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:de82a5c5f35b1a78bb8bd57e19eed0e63811d6b2d327f7c24a95b3119064a390",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:f4e54a5471359dbbf5e3cc598bb781b1b379fd9e5a2b29e454d75aa9a09462d1",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265283824201-286-137796368",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:79ebad3870251baa63ed25caacceb77e4ce4ec8e7afb9e500961a87a060cd43b",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:09f9a80959680617f641a3ddf595ae98d9aecf24bde8146ee88beb85da1764cd",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e6d6a54fddc74516b200dac1a633fb9a:1117341298531-459-1892112",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e6d6a54fddc74516b200dac1a633fb9a:1117730855401-10103-1604112",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:6c3dbf03e68fcc2e25480480ed7d5c3bb4bed23a17923a002da0e9e7c2e9353f",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:2332e91b52ae238ccb8e3d519c57c7662882e2d3dab7cb56f61e65e496ea2ad4",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:6036ea33ba3eb36b990a401e910e6f955fa46689047134a5a04f28e2d0a001ea",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:10888411492994-194-2854160",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:bc8d56f2850088bf1a7dc886d8bbc4b78f16c7655a2387e96eae36d7ca6fd936",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:10888411492994-56-1622544",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1894790365248-10103-1207056",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1887297490143-378-3941648",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1885901035626-56-1787664",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e6d6a54fddc74516b200dac1a633fb9a:1086635651864-350-1390352",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e6d6a54fddc74516b200dac1a633fb9a:1087115557874-10100-1080080",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:a79d43ba0f67d96362f69309646f9e7d6480dd88ee86b1051bd5078aa65ae317",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-a5eb2b4623174d6d8eace8873b8bbbec",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:dbf6c59f57bf67ab1fe582ba7072c384090060fbc0691a6cdfd017d66e61e082",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:3188508556574-10333-159117072",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:97c5b9c8ea8972bfe3d596f74b322b765f02a82acafc0b5e587d500a7e7c9c49",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-aa4227ee6fff43b89bd6562471a06eee-7ae8d424b5054f048032e6a6ef473bd7",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-fc33f45815eb4c5390060eed632483f1-c82feff879554829959d0f2b10aec4b5",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-bdb5b24dd0c048d9899fa26e48f9f287-babcebcf05a54ce4aa1559a41d20e906",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-61b38013c8934f8a97f18bb9ebe9eb0c",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265338427649-10136-109282576",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265338427649-10126-109262864",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265338427649-5702-109262352",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265141404618-10136-108490512",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265141404618-10126-108453648",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265141404618-5702-108454672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3265137724763-466-108377360",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:2568604561837-10427-108244752",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:2568604561837-10427-108242192",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:2568604561837-10427-108240912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:bdb5b24dd0c048d9899fa26e48f9f287:1355583757804-10337-74156816",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:bdb5b24dd0c048d9899fa26e48f9f287:1355580349413-10363-74153488",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:bdb5b24dd0c048d9899fa26e48f9f287:1355577848701-353-74151184",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813470632562-10136-58680848",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813470632562-10126-58658320",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813470632562-5702-58657808",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-10146-58510608",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-15-58509840",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-52-58490896",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-10106-58482704",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-5702-58471440",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-10146-58472976",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-10146-58469904",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813442765359-10116-58470416",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:26ff22bea440c7db97b68176f3d7c57855eb8a0e370c74bf78d2c3b378ce6ec2",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:2e448be44c7e225fddbe4850d14bdb89dfc22102721f9893361245d2df69907b",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805435223485-10391-46980112",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812153398778-10427-58415120",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812153398778-10427-58416400",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813377596096-10136-58350608",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813377596096-10126-58327568",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813377596096-5702-58327056",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813358576396-10136-58311696",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813358576396-10126-58288144",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813358576396-5702-58287632",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813254559505-10136-58190864",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813254559505-5702-58167568",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1813254559505-10126-58166288",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-d8cfc82185bf4842b4392fe34201ca54",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-fc33f45815eb4c5390060eed632483f1-18dc01ebac3349ff9ef91d407f6995f5",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812618047183-10136-56680976",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812618047183-10126-56661520",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812618047183-5702-56660752",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812613459205-10136-56651792",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812613459205-10126-56631568",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812613459205-5702-56631056",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812611817050-10136-56629776",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812611817050-5702-56609552",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812611817050-10126-56610320",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812608617308-10136-56600336",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812608617308-10126-56585744",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812608617308-5702-56584464",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812604144472-10136-56574480",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812604144472-10126-56554768",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812604144472-5702-56554256",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812560478598-10136-56443152",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812560478598-10126-56422672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812560478598-5702-56422160",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3263791029277-10363-106259216",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812285712659-10136-55870480",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812285712659-5702-55850512",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812285712659-10126-55851024",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812283045357-10136-55837456",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812283045357-5702-55817488",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812283045357-10126-55817744",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812251752010-466-55667728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812224090553-10337-55589904",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812220581640-10136-55579664",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812220581640-5765-55552016",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812220581640-5702-55552272",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1812220581640-10126-55551248",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1843320105015-466-12355088",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3263301349200-378-105960976",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:52945474799207-10100-2623248",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:52945285568613-10251-2514704",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:52944920871216-10335-1821712",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:52944899194240-10336-1744912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:52944707297991-10538-1419024",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1841737927016-118-10956816",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-9e4816608c6f40708f6219d267cd3d19",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805836753622-378-49277200",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805620019168-10191-48079376",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805586572615-10116-48007440",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805568830389-10177-47964176",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805564651445-10391-47914768",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805563699136-10391-47910928",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805561381826-10391-47908880",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805526042373-10103-47692816",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805515520209-10191-47567376",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805463928921-10116-47159312",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805443961169-10177-47069456",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805443961169-10125-47069968",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805439372898-10391-46994704",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1805436943003-10391-46980368",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:df90efd03f6c4ef491766a4499ddde64:4477487242058-5768-1995024",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:df90efd03f6c4ef491766a4499ddde64:4471213431667-10336-22781712",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-a42fe22bfdb94f93a948d0c7990e6118-943a41af86304a7bb220367dd9497987",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-e7db988e5a544b7aa3e3c1593e81c0fa-109900acbab746a3ac4fee3a7a8dccee",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:f6ae236dde4a9abd78a69b47a8425c714523c1ee86e8d3b70945c76867c37657",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d2132cf4ca724ae0a0a04cd01ddd24aa-dd48c351c5dd41448e27454c8db8e899",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:8431842114014-10137-188853776",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:8432523947236-299-188419344",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:8428243325982-10320-186446864",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:3276750701446-10320-16271376",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:3275018321739-10118-14739984",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:3275015448639-466-14458640",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-1707881bb8324f619e79f3fce280f27b-edfeb3faba8b46bd90591b4395c0d5c9",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-1707881bb8324f619e79f3fce280f27b-df4418e2b9864e3aa8ca12ad88ad4e39",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:5bcce129940a57fa4fdce3505159631539ff95349a6783adf0ab3716a6c1038e",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:2fe04241897dfc748aa8a2efbeed6e17b7dd12094c4e1854c583c17e556e6a1e",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e34475e12a2643d7849ca5d5f919619a:5918027568212-113-127868944",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-aa4227ee6fff43b89bd6562471a06eee-175055b743c04185b00ee773d0019257",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-e34475e12a2643d7849ca5d5f919619a-f281addc67314c82bb8b5c9ed8f972ac",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e34475e12a2643d7849ca5d5f919619a:5998532972713-10316-122614032",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e34475e12a2643d7849ca5d5f919619a:5998458643754-353-122460176",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:cc21554a43417d9475820940462fa5a5f2a5f21e4431143b4c7ae9cf7d65d89d",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-aa4227ee6fff43b89bd6562471a06eee-3e7c9d901f17497bb4abba732cf4720b",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e6d6a54fddc74516b200dac1a633fb9a:1009018483926-10335-383435792",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e6d6a54fddc74516b200dac1a633fb9a:1009001332486-10336-383370256",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:7950289000893-10320-97186576",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:7950127282145-10141-97107728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:7949180467562-10336-96093712",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:7947394870919-466-94333968",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-6d6bdd4fad07408b94870d55fe358318-af932e17f6744000a01493deb654cbba",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-9ec3519896e14d1ca26f33bc6d111f76-8837c63ce43e43d084fa6007d38fe92f",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:5d08e546496576fabda9f77939a282409f28d8bbbb221fa039766d225addc3dc",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:218240e1bd2df988d60afc46ed5b2132ecd42ea5f455cd165348401ba4fe970e",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:700397ddad9749d88605146a9489ea78dee1ae5fb3f59227da7b21e03331193d",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:40d9a15069074a20e6a75a696da6704352085278aace1975677600f337db450a",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3721527314776-10320-3069456",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3720149079600-10118-1841680",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3652076523720-10141-32267280",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:10381467513136-458-313795344",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:46f0ab81e13e2aacb0253226c2769ba9b689ac2509c47cda5868a3dbafd79883",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:64c7c95723bb61cf73c276a4fbf2e022c48bd51c34e6ddd2b264595c569a815b",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:2340079658421-10168-25510672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:10298641290926-10336-259976720",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:10297997744809-10251-259260432",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:10297857938653-10538-258992912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9861478243342-474-254679568",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-383bc312d3f94d5581f03882c63f2f66-04144c3085354cf7a9379de53c187d3f",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:383bc312d3f94d5581f03882c63f2f66:21922431246261-10100-263477264",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:383bc312d3f94d5581f03882c63f2f66:21922108469337-10335-262815248",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:383bc312d3f94d5581f03882c63f2f66:21922075850393-10336-262684944",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:383bc312d3f94d5581f03882c63f2f66:21922053398409-42-262616080",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1680126696398-10136-29059600",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1680126696398-5702-29050128",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1680126696398-10126-29050640",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-81ab1d0d4b94463b87a1d0f7bc21be0b",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1430236332240-412-27521040",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679385645653-10136-26417168",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679385645653-10126-26396688",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679385645653-5702-26395920",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679363141954-10136-26289168",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679363141954-10126-26268176",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679363141954-5702-26267920",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679319936951-10136-26016016",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679319936951-5702-25999120",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679319936951-10126-25997328",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1679319936951-466-25996560",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1677556162833-10427-25989648",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1651796940989-459-19498000",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-8e6eb77c0fe843a79284f8a56e1d873f",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1678239816840-378-24942352",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1649649807527-368-11542800",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1649649807527-10251-8993296",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1649649807527-194-6589712",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-c963d64bac1e45f48274b98b8b462b4b",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1649649807527-56-1484816",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1557138010194-10141-42107152",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1648832913021-10538-42045968",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139884470354-5702-24804880",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139884470354-10146-24806416",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139873562966-5702-24794384",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139873562966-10146-24795664",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139856713069-10146-24780560",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139856713069-5702-24779536",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139802136553-5702-24743440",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139802136553-10146-24744720",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139669674899-10146-24639504",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139669674899-5702-24638224",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139609056540-10146-24596240",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139609056540-5702-24594960",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139596904558-5702-24581392",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139596904558-10146-24582928",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139516104278-5702-24528400",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139516104278-10146-24529680",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139498449828-5702-24514064",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139498449828-10146-24515344",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139472963290-5702-24489488",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139472963290-10146-24491024",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139462259143-5702-24475152",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139462259143-10146-24476944",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139394646227-5702-24429840",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139394646227-10146-24431120",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139124567414-10146-24235792",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139124567414-5702-24234256",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139104416969-5702-24206096",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3139104416969-10146-24207632",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-fc33f45815eb4c5390060eed632483f1-17577b7be579429a85088c42451f4883",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138736265165-5702-23569680",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138736265165-10146-23572240",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138669853834-10146-23453968",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138669853834-5702-23452176",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138656158130-10146-23406608",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138656158130-5702-23404816",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138621034422-10146-23213328",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138621034422-5702-23211280",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-427ba8b0b3ec4c5788700158d660da47",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138477028061-5702-22865680",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138477028061-10146-22867472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138477028061-10146-22866192",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138429116579-10146-22769680",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138429116579-5702-22767376",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138417205280-5702-22724112",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138417205280-10146-22726160",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138375113780-10146-22576400",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138375113780-10146-22578448",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138375113780-466-22576144",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138375113780-5702-22575632",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3090675358752-10427-22547728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3090675358752-10427-22546448",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138353949219-10146-22323984",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138353949219-5702-22321936",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138353949219-10146-22322448",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138274656319-10146-22164240",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138274656319-5702-22162704",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138210614181-10146-22026768",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138210614181-5702-22024464",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138188599480-10146-21966352",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138188599480-5702-21964304",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138167717891-10146-21899024",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138167717891-5702-21896208",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138141647400-5765-21809936",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138141647400-10146-21813008",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138141647400-5702-21810192",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138141647400-10116-21808912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3138136665353-10363-21803280",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-6d6bdd4fad07408b94870d55fe358318-98101ed562e944cf8114acf4616fe385",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-aa4227ee6fff43b89bd6562471a06eee-3ed711a97504433ea69f762b45e065f2",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:1fead5b08a9fac5840a5ab0d61e9555660c05c42b5be2dee7b8a4e99a4cb696d",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:e509f99b7a73cf805055cc4cb3ecec1104de6099cc69e05089056ec18382970c",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:3064427144362-10320-3205648",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:3063775296672-10141-2808336",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:3062929640942-10118-2006032",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:3062927885015-466-1692688",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-2d1fe822a0fa4c519741db68e0a0866a",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:f7699682f8fa42e5a38761fb3b7f1dc2:246876611641-10335-4478480",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:f7699682f8fa42e5a38761fb3b7f1dc2:246837211626-10336-4328976",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:f7699682f8fa42e5a38761fb3b7f1dc2:246565959254-10538-3622672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-383bc312d3f94d5581f03882c63f2f66-ccfc29b14c274fe384b29b16e9dce790",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9730052486239-458-51860240",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:5411fd7f511a2a45c27f4448f50cc98b2fd05df2bc9a55599c56ff6bbe81ef8a",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47882643817449-10261-192337936",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47882648643451-10261-192337168",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:ac01640761f602b95071ac62ab606719c8778c766cb5dde99dfce50efdd36f4d",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:be9da92eb42e945599880c9000027273ba2c480c8999b1cdc3c16c44b657b533",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47618027603886-10335-59315472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47617593030790-10120-58968848",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9674765431422-458-6750480",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47503709066748-10261-1724688",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47503701199797-10261-1725968",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-30cd68403e7745bea5c03303950bec6f-be1ec5d373e64252b02e050d309179fe",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47476771695918-10261-74362128",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47476760726852-10261-74363408",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47476292539613-466-73998352",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:38a7a175a9b310e8371114eb7d60cb97883bb31cb6dff92dbce72fefd0ab379f",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:b26e0ce574da9c6a9586380d81f59f65bdb713abd267295d3208f365dfb4ed16",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:d3683c6262d6e80d50a8acc48a58afc2b967da9dd963b0ebbb9d5718e4561076",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-6d6bdd4fad07408b94870d55fe358318-e58a08f5ea274246a3bf1a052a4eaa18",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:f1db18a9a74f37fef1d78081bbb94f8fb949c65957aa4b9737cdcbd5c34234df",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:7295562261302-378-221210384",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-30cd68403e7745bea5c03303950bec6f-ee90a6ec7a8b463191f31b91483ab92f",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:7293519133251-10333-219763472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47120206948638-55-6672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47120206948638-56-5904",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47114206915609-467-2733139984",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:47102095834168-402-2726588432",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:41682636490700-10011-2725229584",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:e9071bc6611784254117ce1d83f8de715fd708097a6744f215ee5cbf3b71f533",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3565217108413-118-22131472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-aa4227ee6fff43b89bd6562471a06eee-2ea761ceae914c70b6a70ab18637aece",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:aa4227ee6fff43b89bd6562471a06eee:1389224532265-10336-338004752",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:aa4227ee6fff43b89bd6562471a06eee:1388745719177-10427-333110544",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:aa4227ee6fff43b89bd6562471a06eee:1388745719177-10115-332532752",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-4636b185ad2b436db50944eada286cc8-1c79176b79354b98b1c394e9211cd1d9",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9593249786109-10336-14547472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9592892381152-458-11984144",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9592818576852-10337-9925648",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9591243716970-194-3443472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9591243716970-56-1374736",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3551365072941-10320-12893712",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:2824345512374-10336-397043472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:2824478978318-10363-397218576",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:2824478736872-353-397223696",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:2126433407532-474-389101072",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:2825056046217-10337-397763600",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-f88e824f9c16469cae9c7ba82df88220",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-9ec3519896e14d1ca26f33bc6d111f76-7d776a1d7ca645fea50ecc87762bb422",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3437302209126-10141-72488208",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3023083352123-118-298761488",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:5d8f92134e8e641abc8ac182ec56f436f726e28378289296e1bc2aaef8fd143b",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:fc33f45815eb4c5390060eed632483f1:3021557859438-353-297801232",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-54af1d55afd0408dbf1e5a0e2a54c317-e0d0179bbf1544278b5a002f757554d7",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:54af1d55afd0408dbf1e5a0e2a54c317:645662695678873855-20162-82692",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:54af1d55afd0408dbf1e5a0e2a54c317:645655764479313113-20162-37890",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:54af1d55afd0408dbf1e5a0e2a54c317:645654367820120552-20162-13968",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:54af1d55afd0408dbf1e5a0e2a54c317:642894553670105452-534-453606",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:3fb3632495eb335a82db37589de29ea0a9e5ab56d27e19f4b4bdd4030a791e0f",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:3e7909d488978fe4c910806769c90bc27d8cf594477bcc737c1884dc1b9d6746",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-30cd68403e7745bea5c03303950bec6f-5dd72a3ac00f4673893efd22c7cf6ef2",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1398338734884-10320-2263568",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1396478760724-10118-1245200",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1392660549891-10538-1971216",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1392660549891-466-1967888",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1392478007732-350-1731600",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1391933580635-56-961040",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:2761585670319-10363-353776400",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9a65989aef614b53b7d31fc3c94fa3b7:2760967093170-10336-353268752",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9562866308405-458-310479376",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:cb73463168bd52cce2e712625e03451993e226e3071c8a18d1cf70f876e28ab0",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:4dcb4cd2b4a5930a2a02ff17cd0d9f3185b66c682cb636931e864ea92a5d7443",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e34475e12a2643d7849ca5d5f919619a:5692176705824-118-5541136",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e34475e12a2643d7849ca5d5f919619a:5686628700047-113-642576",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:e97bbd66bbd0cb9d7bc9313ea47a09c7cc51314de9bd844b9e4e8ede54743611",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:8218b1aa2c60d25888635ddda2af66828901038ae532a558f410e7f3204ec65c",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:41795723958347-10333-70207504",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:56b24fe7ed2344d987080a7f22f78c17:10452961790-10427-1619728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:56b24fe7ed2344d987080a7f22f78c17:10458493953-10427-1610000",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:41790494355420-10127-68478992",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1353275691383-56-1395472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:41685287032348-466-10267920",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-30cd68403e7745bea5c03303950bec6f-79fc21f1680d488e9a0ccae98407d953",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:41678494278257-56-6672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:41678494278257-55-5904",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:127ed868d415f25064af673a0b755c24bf97683c8cf94916c5b0d208789339ba",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:d77e5633093a25440a43479d37dc92ea4706ee4f922a94c86d6f1e0fa45efe53",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1347047779024-448-45254928",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1346839859385-466-44381968",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d265d7d4dd474b2490b6cbf3204396bf:2253033648554-10311-2413840",
+        "6d910a2d8a2b47adababaecce2c242fc:ods:6d910a2d8a2b47adababaecce2c242fc:a2bc30602e554549b8734dcedc2ed89d",
+        "6d910a2d8a2b47adababaecce2c242fc:ods:6d910a2d8a2b47adababaecce2c242fc:1016d226d45f473b815fdfffb012be84",
+        "6d910a2d8a2b47adababaecce2c242fc:ods:6d910a2d8a2b47adababaecce2c242fc:e6b99ce6f3384e62ba1be673a8558cf9",
+        "6d910a2d8a2b47adababaecce2c242fc:ods:6d910a2d8a2b47adababaecce2c242fc:cf49abe4fd4e43ffb45c5a0483a841db",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d265d7d4dd474b2490b6cbf3204396bf:2251684965708-10328-1586960",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:55154510590-118-10690832",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d265d7d4dd474b2490b6cbf3204396bf:2251383441604-459-1319184",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:49918496461-10251-7622672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:51868778858-378-7511824",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:e95c3aac94474f73ad09a42bfe317548:51845867115-10538-7463696",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d2132cf4ca724ae0a0a04cd01ddd24aa-f18c543b9bbe496a9771d45f8bb1f633",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:41244434319882-402-1445111312",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:38417321291487-10011-1444163344",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9506860279760-458-268624400",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-6d6bdd4fad07408b94870d55fe358318-4e4660c8d4d84f1e98b729d7d65c3020",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d265d7d4dd474b2490b6cbf3204396bf:2226266920615-10333-12203280",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1510869255819-10130-87812112",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1508563292141-466-85520400",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:90e64aa9f9fa757917c298492bb5a2da9d2010feec0b0203e7e21c61e218ce87",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1498466161342-10357-74435344",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1498314619235-10357-74256912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1496265599454-10357-72236304",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1495516547374-10357-71499280",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1488873777859-10357-64523792",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1487961813106-10357-63614736",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1487288305765-10357-62937104",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1471974983457-10357-47615504",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1470033001984-10357-45697552",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:44878910714-10368-23371280",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:44878910714-10368-23372560",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:44902186608-10121-23363600",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:44885160600-10370-23328272",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1466241091338-10357-41313296",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1462211686992-10357-37223440",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1461295914027-10357-36300048",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1460094141078-10357-34617616",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-65626907fa4743dfa6c7e43f0f20e728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1456498822742-10357-29228048",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1452562301219-10357-22016272",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:3e5b75e0cb87dcd656926a1004f5c0c6dc55f3a9eebcca899798bc7f72b230f1",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:6cdacc5c7115e105aafcf6b10aaef317abfd81fa296f857e0e88116bc52b02bd",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-7e65ba2db29c4c2a85dffbf7d76e6a79",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1426608424226-10367-122799888",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9473875781115-458-243955984",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-b7d7ec6d33b648a6a60694888d136494",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1421810315568-10335-112593680",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1421474417875-10335-112253712",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1420706585693-10311-109964048",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1417999332861-10357-105206800",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1417704223574-467-104279056",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1417514401732-299-102777360",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9471811157435-458-241854224",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:bdb090fe385854da51f5bea57ef7a7915337b7cefd447dc2866f5c47ac469dba",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:935f6a39c5024d2dacf885c71c7ab322:728251734509-10336-6929424",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:935f6a39c5024d2dacf885c71c7ab322:728208145525-10335-6814992",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:935f6a39c5024d2dacf885c71c7ab322:726797807212-10538-2742800",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-fc33f45815eb4c5390060eed632483f1-2fc269bb756b4507994165c753317d56",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:38417321291487-10011-35051280",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:6e58070b96181a18d628d7ccc11caec5f91576be479a50bf883aacf94e628371",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9455159991810-458-229745424",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d6bdd4fad07408b94870d55fe358318:1438362949621-10127-40238608",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-30cd68403e7745bea5c03303950bec6f-c4a9f9dccc874278a2268a57cf331e41",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:38367049863104-55-5904",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:38367049863104-56-5136",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-6d6bdd4fad07408b94870d55fe358318-8f49933469f149a1aec0b43830d4c856",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d6bdd4fad07408b94870d55fe358318:1435334484773-10320-37311504",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:7655035-5319-1967817800417886486",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11707424170-5315-1967783623429538159",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:8838a9920c5a7cd8907be92d8d983e689a56779c04b659a030e33ca74ea86de7",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11931918717-10427-11185424",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11936680496-10427-11167504",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:7655035-10427-11085072",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11817335123-10427-11016976",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11822375016-5734-10995984",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11822375016-10427-10994448",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11699258284-5734-10556176",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11697065886-10427-10523152",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:3d42a5754b9b473987133669e72504b9:11699258284-10427-10520080",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:37819976137120-459-5568294416",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:37756181722859-118-5534148624",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:37733167396328-10538-5522099472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:32805511385098-10337-3060859920",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:30cd68403e7745bea5c03303950bec6f:26726566801902-10011-3056281872",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:4ba96011b98497ecd3f4c5675238339738494ffa0b7c9fe619e8a195795b303e",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:315f836c6cd85b23f4ac19dd7a0eb164e8b98f5e659710a12cfc95fd81cc5236",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-d60a7c64f06c42bf9271af6c3c5dd55c-ec98ab0efad74fe7a74ca9a726082b91",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9439348788856-458-214263824",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1250315073777-368-9408016",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1250315073777-10251-6932496",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1250315073777-194-4583440",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1250758657732-10538-2587408",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d60a7c64f06c42bf9271af6c3c5dd55c:1250315073777-56-2280208",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:d74e1d8d2d0e97a75d647333b5e72f82084e1f7ec59c02410a6036fb2d64cee2",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:2805546456119-10100-2029328",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:2805152115590-10335-1427472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:2805131167140-10336-1348880",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9426502434643-458-202902288",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-383bc312d3f94d5581f03882c63f2f66-96a82ee673cb472a868b064f5564f49a",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:2796318878418-378-2733328",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-301fc21575794f9fa214f901a79220c8-b5630aa790bd4ea5b60c43aae43fc47f",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:7c1f7964191f1a2bee6cd0ebb9c99ca6fc99b49f0ded804df1db40c62a541315",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-2b194402346f4620996d626d75c461e8",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351627373244-10103-43411728",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351621072646-10191-43319568",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351573918001-10157-42935824",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351576860672-10116-42923536",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351563365008-10177-42825488",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351563365008-10125-42826000",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351561019620-10391-42803472",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351556377165-10391-42731792",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1351557480849-10391-42732816",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9420024621900-458-196687888",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:2792588533840-10118-1920528",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9166b5b7c8924acca591affb0362c525:2792584468464-466-1652240",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:46635f923f51e08eb9ccc02f65312e5bd8b3a674747f2c0dc373ecf2adf18a3d",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-383bc312d3f94d5581f03882c63f2f66-845148884a294926a8e0941ee2eabb87",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:6950747094127-10251-253204496",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:d2132cf4ca724ae0a0a04cd01ddd24aa:6959023566162-10141-252941840",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1988393918007-10251-6016016",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1988999333505-10118-5762576",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1988996693790-466-5618448",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1988901353396-459-5541392",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1985447414372-10100-2168080",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1984830687679-10335-1346064",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1984813747387-10336-1276176",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:23dd1e755f47f4df44b45ee06195573ee660585993a4c777100ad052bdd032fb",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3166681994688-10251-6906128",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3170949750334-10118-6641168",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3170993510132-466-6298128",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10307578237-10139-4512272",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10307286633-10139-4510480",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10305245825-10139-4507920",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10251536621-10357-4417296",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10250052873-10357-4415504",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10249052581-10357-4403984",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10248340565-10357-4391952",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10247221913-10357-4389904",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:10245274033-10357-4386832",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3166786652596-10100-2110992",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3166440467004-10335-1563152",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3166421422556-10336-1488912",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8894496929-10219-1136144",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8892785825-10219-1129488",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8888910613-10219-1125392",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8887963309-10357-1121296",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8886131085-10357-1119760",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8884241981-10357-1116944",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8879808913-10219-1110800",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8877289441-10219-1108240",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8873723069-10357-1103632",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8863604829-10357-1091088",
+        "6d910a2d8a2b47adababaecce2c242fc:automated-lead:6d910a2d8a2b47adababaecce2c242fc:4e137f638d435fc73826746317b290bb381c3ac65ddd66704523fe024f5cc676",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8824538649-10357-1007632",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8821880129-10357-1005584",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8818016109-10357-999184",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8815434629-10357-997136",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8813855577-10357-994320",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8640190641-5734-465424",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:2014d1a082ce4cec9aa4bcc3498c84fc:8640190641-10427-460048",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:9ec3519896e14d1ca26f33bc6d111f76:3152750002971-378-1542672",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1937198423255-474-32365584",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:4636b185ad2b436db50944eada286cc8:9395734880476-458-173819152",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-e6d6a54fddc74516b200dac1a633fb9a-55921ba1b5b04f9fb9ff6f8095b91bf4",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1948752856349-10251-22940176",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1956604387795-10118-22682896",
+        "6d910a2d8a2b47adababaecce2c242fc:ind:0cbe4eb586614ae087a93b30f4974c97:1956570280205-466-22412560"
+      ]
+    }
+  },
+  {
+    "itemName": "Update Detects",
+    "urlPath": "alerts/entities/alerts/v3",
+    "method": "PATCH",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.656449536,
+        "writes": {
+          "resources_affected": 1
+        },
+        "powered_by": "detectsapi",
+        "trace_id": "b21092e281244074a62e5e26747d79d9"
+      }
+    }
+  },
+  {
+    "itemName": "Search Alerts",
+    "urlPath": "alerts/entities/alerts/v2",
+    "method": "POST",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.016047361,
+        "writes": {
+          "resources_affected": 0
+        },
+        "powered_by": "detectsapi",
+        "trace_id": "ab988d89cb944b749ab467506d203acf"
+      },
+      "resources": [
+        {
+          "agent_id": "09fd714d43d0405e96962438a49e8109",
+          "aggregate_id": "",
+          "author": "CrowdStrike",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "composite_id": "6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-65626907fa4743dfa6c7e43f0f20e728",
+          "crawled_timestamp": "2025-09-22T07:16:45.038793358Z",
+          "created_timestamp": "2025-09-22T07:12:45.032542896Z",
+          "data_domains": [
+            "Endpoint"
+          ],
+          "description": "Techniques: Masquerading",
+          "end_time": "2025-09-22T07:09:40.707Z",
+          "end_time_epoch": 1758524980707,
+          "entities": {
+            "agent_ids": [
+              "09fd714d43d0405e96962438a49e8109"
+            ],
+            "file_name": [
+              "035C00000008C28D07A088B4"
+            ],
+            "image_file_name": [
+              "\\Device\\HarddiskVolume2\\$Extend\\$Deleted\\035C00000008C28D07A088B4"
+            ],
+            "process": [
+              "8312"
+            ],
+            "sha256": [
+              "5b165b01f9a1395cae79e0f85b7a1c10dc089340cf4e7be48813ac2f8686ed61"
+            ],
+            "username": [
+              "elambirai@ad.threat.in"
+            ]
+          },
+          "entity_values": {
+            "agent_ids": [
+              "09fd714d43d0405e96962438a49e8109"
+            ],
+            "sha256s": [
+              "5b165b01f9a1395cae79e0f85b7a1c10dc089340cf4e7be48813ac2f8686ed61"
+            ],
+            "users": [
+              "elambirai@ad.threat.in"
+            ]
+          },
+          "falcon_host_link": "https://falcon.crowdstrike.com/xdr/incidents/6d910a2d8a2b47adababaecce2c242fc:ind:6d910a2d8a2b47adababaecce2c242fc:xdr%7Cinc-09fd714d43d0405e96962438a49e8109-65626907fa4743dfa6c7e43f0f20e728?_cid=g03000efh7hegjb5efhfk56633uztxly",
+          "id": "ind:6d910a2d8a2b47adababaecce2c242fc:xdr|inc-09fd714d43d0405e96962438a49e8109-65626907fa4743dfa6c7e43f0f20e728",
+          "incident": {
+            "created_time": "2025-09-22T07:09:39Z",
+            "end_time": "2025-09-22T07:05:45Z",
+            "highest_score": "1.013749",
+            "host_ids": [
+              "09fd714d43d0405e96962438a49e8109"
+            ],
+            "score": "0.000000",
+            "start_time": "2025-09-22T07:01:11Z",
+            "state": "active",
+            "type": "1",
+            "version": 5
+          },
+          "mitre_attack": [
+            {
+              "tactic_id": "TA0005",
+              "technique_id": "T1036",
+              "tactic": "Defense Evasion",
+              "technique": "Masquerading"
+            }
+          ],
+          "name": "elambirai on ADTHREAT-DC1",
+          "no_signal": true,
+          "pattern_id": 100000,
+          "platform": "Public_Cloud",
+          "poly_id": "AABtkQotiitHraurrsziwkL8mRP_92MJhE1MaPqejU6fowAATiHw38Rw24LMP1yIZrloj2Gt3x47OPbTbqh0QebpNm2LTg==",
+          "product": "xdr",
+          "references": {
+            "indicator_alert_ids": [
+              "6d910a2d8a2b47adababaecce2c242fc:ind:09fd714d43d0405e96962438a49e8109:1452562301219-10357-22016272"
+            ],
+            "indicator_detection_ids": [
+              "ldt:09fd714d43d0405e96962438a49e8109:158913929644"
+            ],
+            "indicator_vertex_ids": [
+              "ind:09fd714d43d0405e96962438a49e8109:1452562301219-10357-22016272"
+            ],
+            "source_vertex_id": "inc:09fd714d43d0405e96962438a49e8109:65626907fa4743dfa6c7e43f0f20e728",
+            "source_vertex_type": "incident",
+            "xdr_indicator_ids": [
+              "e8391fa26de81c7e0018a912ad7ddd2b6b4783e7b5f2b28c30aefc870a01dd24"
+            ],
+            "xdr_source_event_id": "3ec5ef34-8c97-4ea6-b93b-6c6d9475bdcd"
+          },
+          "seconds_to_resolved": 0,
+          "seconds_to_triaged": 0,
+          "show_in_ui": false,
+          "source_event_model": "ECS",
+          "source_products": [
+            "Falcon"
+          ],
+          "source_vendors": [
+            "CrowdStrike"
+          ],
+          "start_time": "2025-09-22T07:01:11Z",
+          "start_time_epoch": 1758524471000,
+          "status": "new",
+          "tactic": "Defense Evasion",
+          "tactic_id": "TA0005",
+          "tactic_ids": [
+            "TA0005"
+          ],
+          "tactics": [
+            "Defense Evasion"
+          ],
+          "technique": "Masquerading",
+          "technique_id": "T1036",
+          "technique_ids": [
+            "T1036"
+          ],
+          "techniques": [
+            "Masquerading"
+          ],
+          "timestamp": "2025-09-22T07:11:43.316Z",
+          "type": "xdr",
+          "updated_timestamp": "2025-09-22T07:16:45.038781049Z",
+          "xdr_detection_id": "inc:09fd714d43d0405e96962438a49e8109:65626907fa4743dfa6c7e43f0f20e728",
+          "xdr_pattern_id": 199990,
+          "xdr_rule_id": 999123,
+          "xdr_type": "xdr"
+        }
+      ]
+    }
+  },
+  {
+    "itemName": "Update Prevention Policy",
+    "urlPath": "policy/entities/prevention/v1",
+    "method": "PATCH",
+    "successResponseBody": {
+      "meta": {
+        "query_time": 0.153569945,
+        "trace_id": "58100af1-fb7f-447b-b5db-fbdd9716bf80"
+      },
+      "errors": null,
+      "resources": [
+        {
+          "id": "9f3cb90362ee4c39b520a3af8f913ebb",
+          "cid": "6d910a2d8a2b47adababaecce2c242fc",
+          "name": "shunmu-soar-client",
+          "description": "",
+          "platform_name": "Windows",
+          "groups": [
+            {
+              "id": "cf12e080886048c89322f73396a1ee16",
+              "group_type": "dynamic",
+              "name": "API-Testing-Group",
+              "description": "",
+              "assignment_rule": "hostname:'WIN-DDHJPS3L2L9'",
+              "created_by": "shunmugavel.ss@zohocorp.com",
+              "created_timestamp": "2025-08-23T08:46:30.474463927Z",
+              "modified_by": "shunmugavel.ss@zohocorp.com",
+              "modified_timestamp": "2025-09-12T13:31:10.989727149Z"
+            }
+          ],
+          "enabled": false,
+          "created_by": "shunmugavel.ss@zohocorp.com",
+          "created_timestamp": "2025-09-15T13:54:14.23898612Z",
+          "modified_by": "api-client-id:33bc4f62d4414e95a541f04eff135903",
+          "modified_timestamp": "2025-11-04T05:56:16.226244416Z",
+          "prevention_settings": [
+            {
+              "name": "User-Mode Capabilities",
+              "settings": [
+                {
+                  "id": "EndUserNotifications",
+                  "name": "Notify End Users",
+                  "type": "toggle",
+                  "description": "Show a pop-up notification to the end user when the Falcon sensor blocks, kills, or quarantines. These messages also show up in the Windows Event Viewer under Applications and Service Logs.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "UnknownDetectionRelatedExecutables",
+                  "name": "Unknown Detection-Related Executables",
+                  "type": "toggle",
+                  "description": "Upload all unknown detection-related executables for advanced analysis in the cloud.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "UnknownExecutables",
+                  "name": "Unknown Executables",
+                  "type": "toggle",
+                  "description": "Upload all unknown executables for advanced analysis in the cloud.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "SensorTamperingProtection",
+                  "name": "Sensor Tampering Protection",
+                  "type": "toggle",
+                  "description": "Blocks attempts to tamper with the sensor. If disabled, the sensor still creates detections for tampering attempts but doesn’t block them. Disabling not recommended.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Enhanced Visibility",
+              "settings": [
+                {
+                  "id": "AdditionalUserModeData",
+                  "name": "Additional User Mode Data",
+                  "type": "toggle",
+                  "description": "Allows the sensor to get more data from a user-mode component it loads into all eligible processes, which augments online machine learning and turns on additional detections. Recommend testing with critical applications before full deployment.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "InterpreterProtection",
+                  "name": "Interpreter-Only",
+                  "type": "toggle",
+                  "description": "Provides visibility into malicious PowerShell interpreter usage. For hosts running Windows 10, Script-Based Execution Monitoring may be used instead.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "EngineProtectionV2",
+                  "name": "Engine (Full Visibility)",
+                  "type": "toggle",
+                  "description": "Provides visibility into malicious System Management Automation engine usage by any application. Requires Interpreter-Only.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "ScriptBasedExecutionMonitoring",
+                  "name": "Script-Based Execution Monitoring",
+                  "type": "toggle",
+                  "description": "For hosts running Windows 10 and Servers 2016 and later, provides visibility into suspicious scripts and VBA macros in Office documents. Requires Quarantine & Security Center Registration toggle to be enabled.",
+                  "value": {
+                    "configured": true,
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "HTTPDetections",
+                  "name": "HTTP Detections",
+                  "type": "toggle",
+                  "description": "Allows the sensor to monitor unencrypted HTTP traffic and certain encrypted HTTPS traffic on the sensor for malicious patterns and generate detection events on non-Server systems.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "RedactHTTPDetectionDetails",
+                  "name": "Redact HTTP Detection Details",
+                  "type": "toggle",
+                  "description": "Remove certain information from HTTP Detection events, including URL, raw HTTP header and POST bodies if they were present. This does not affect the generation of HTTP Detections, only additional details that would be included and may include personal information (depending on the malware in question). When disabled, the information is used to improve the response to detection events. Has no effect unless HTTP Detections is also enabled.",
+                  "value": {
+                    "configured": true,
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "HardwareEnhancedExploitDetection",
+                  "name": "Hardware-Enhanced Exploit Detection",
+                  "type": "toggle",
+                  "description": "Provides additional visibility into application exploits by using CPU hardware features that detect suspicious control flows. Available only for hosts running Windows 10 (RS4) or Windows Server 2016 Version 1803 or later and Skylake or later CPU.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "EnhancedExploitationVisibility",
+                  "name": "Enhanced Exploitation Visibility",
+                  "type": "toggle",
+                  "description": "For hosts running Windows 10 1809 and Server 2019 and later, provides additional visibility into common exploitation techniques used to weaken or circumvent application security.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "ExtendedUserModeDataSlider",
+                  "name": "Extended User Mode Data",
+                  "type": "mlslider",
+                  "description": "Allows the sensor to generate additional data from a user-mode component loaded into eligible processes. Higher settings can incur greater performance penalties in exchange for increased visibility. Recommend testing with critical applications before full deployment at a new level.",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                },
+                {
+                  "id": "DLLLoadVisibility",
+                  "name": "Enhanced DLL Load Visibility",
+                  "type": "toggle",
+                  "description": "For hosts running Windows Server, increases sensor visibility of loaded DLLs. Improves detection coverage and telemetry, but may cause a small performance impact. Recommend testing with critical applications before full deployment.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "WSL2Visibility",
+                  "name": "WSL2 Visibility",
+                  "type": "toggle",
+                  "description": "Provides visibility into WSL2 distributions by enabling a Falcon sensor plugin.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Hardware-Enhanced Visibility",
+              "settings": [
+                {
+                  "id": "MemoryScan",
+                  "name": "Memory Scanning",
+                  "type": "toggle",
+                  "description": "Provides visibility into in-memory attacks by scanning for suspicious artifacts on hosts with the following: an integrated GPU and supporting OS libraries, Windows 10 v1607 (RS1) or later, and a Skylake or newer Intel CPU.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "CPUMemoryScan",
+                  "name": "Scan with CPU",
+                  "type": "toggle",
+                  "description": "Allows memory scanning to use the CPU or virtual CPU when an integrated GPU is not available. All Intel processors supported, requires Windows 8.1/2012 R2 or later.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Firmware",
+              "settings": [
+                {
+                  "id": "FirmwareAnalysisExtraction",
+                  "name": "BIOS Deep Visibility",
+                  "type": "toggle",
+                  "description": "Provides visibility into BIOS. Detects suspicious and unexpected images. Recommend testing to monitor system startup performance before full deployment.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Cloud Machine Learning",
+              "settings": [
+                {
+                  "id": "CloudAntiMalware",
+                  "name": "Cloud Anti-malware",
+                  "type": "mlslider",
+                  "description": "Use cloud-based machine learning informed by global analysis of executables to detect and prevent known malware for your online hosts.",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                },
+                {
+                  "id": "AdwarePUP",
+                  "name": "Adware & PUP",
+                  "type": "mlslider",
+                  "description": "Use cloud-based machine learning informed by global analysis of executables to detect and prevent adware and potentially unwanted programs (PUP) for your online hosts.",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Sensor Machine Learning",
+              "settings": [
+                {
+                  "id": "OnSensorMLSlider",
+                  "name": "Sensor Anti-malware",
+                  "type": "mlslider",
+                  "description": "For offline and online hosts, use sensor-based machine learning to identify and analyze unknown executables as they run to detect and prevent malware.",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                },
+                {
+                  "id": "ML Large File Handling",
+                  "name": "Enhanced ML for larger files",
+                  "type": "toggle",
+                  "description": "Expand ML file size coverage. Existing ML level settings apply.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "On-Demand Scans Machine Learning",
+              "settings": [
+                {
+                  "id": "OnSensorMLSliderForSensorEndUserScans",
+                  "name": "Sensor Anti-malware for End-User Initiated Scans",
+                  "type": "mlslider",
+                  "description": "For offline and online hosts running on-demand scans initiated by end users, use sensor-based machine learning to identify and analyze unknown executables to detect and prevent malware.",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                },
+                {
+                  "id": "OnSensorMLSliderForCloudEndUserScans",
+                  "name": "Cloud Anti-malware for End-User Initiated Scans",
+                  "type": "mlslider",
+                  "description": "For online hosts running on-demand scans initiated by end users, use cloud-based machine learning informed by global analysis of executables to detect and prevent known malware.",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                },
+                {
+                  "id": "CloudMLSliderForPupAdwareCloudEndUserScans",
+                  "name": "Cloud PUP/Adware for End-User Initiated Scans",
+                  "type": "mlslider",
+                  "description": "For online hosts running on-demand scans initiated by end users, use cloud-based machine learning informed by global analysis of executables to detect and prevent known PUP and Adware.",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "On-Demand Scans",
+              "settings": [
+                {
+                  "id": "USBInsertionTriggeredScan",
+                  "name": "USB Insertion Triggered Scan",
+                  "type": "toggle",
+                  "description": "Start an on-demand scan when an end user inserts a USB device. To adjust detection sensitivity, change Anti-malware Detection levels in On-Demand Scans Machine Learning.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "On Write",
+              "settings": [
+                {
+                  "id": "DetectOnWrite",
+                  "name": "Detect on Write",
+                  "type": "toggle",
+                  "description": "Use machine learning to analyze suspicious files when they're written to disk. To adjust detection sensitivity, change Anti-malware Detection levels in Sensor Machine Learning and Cloud Machine Learning.",
+                  "value": {
+                    "configured": true,
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "QuarantineOnWrite",
+                  "name": "Quarantine on Write",
+                  "type": "toggle",
+                  "description": "Use machine learning to quarantine suspicious files when they're written to disk. To adjust quarantine sensitivity, change Anti-malware Prevention levels in Sensor Machine Learning and Cloud Machine Learning.",
+                  "value": {
+                    "configured": true,
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "OnWriteScriptFileVisibility",
+                  "name": "On Write Script File Visibility",
+                  "type": "toggle",
+                  "description": "Provides improved visibility into various script files being written to disk in addition to clouding a portion of their content.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Quarantine",
+              "settings": [
+                {
+                  "id": "NextGenAV",
+                  "name": "Quarantine & Security Center Registration",
+                  "type": "toggle",
+                  "description": "Quarantine executable files after they’re prevented by NGAV. When this is enabled, we recommend setting anti-malware prevention levels to Moderate or higher and not using other antivirus solutions. CrowdStrike Falcon registers with Windows Security Center, disabling Windows Defender.",
+                  "value": {
+                    "configured": true,
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "NextGenAVQuarantineOnRemovableMedia",
+                  "name": "Quarantine on Removable Media",
+                  "type": "toggle",
+                  "description": "Quarantine executable files after they’re prevented by NGAV.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Microsoft Office File Macro Machine Learning",
+              "settings": [
+                {
+                  "id": "CloudAntiMalwareForMicrosoftOfficeFiles",
+                  "name": "Cloud Anti-malware For Microsoft Office Files",
+                  "type": "mlslider",
+                  "description": "Identifies potentially malicious macros in Microsoft Office files and, if prevention is enabled, either quarantines the file or removes the malicious macros before releasing the file back to the host",
+                  "value": {
+                    "detection": "DISABLED",
+                    "prevention": "DISABLED"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Clean Infected Microsoft Office Files",
+              "settings": [
+                {
+                  "id": "MicrosoftOfficeFileSuspiciousMacroRemoval",
+                  "name": "Microsoft Office File Malicious Macro Removal",
+                  "type": "toggle",
+                  "description": "When enabled, malicious macros in Microsoft Office files will be removed before the file is released on the host.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Execution Blocking",
+              "settings": [
+                {
+                  "id": "CustomBlacklisting",
+                  "name": "Custom Blocking",
+                  "type": "toggle",
+                  "description": "Block processes matching hashes that you add to IOC Management with the action set to \"Block\" or \"Block, hide detection\".",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "PreventSuspiciousProcesses",
+                  "name": "Suspicious Processes",
+                  "type": "toggle",
+                  "description": "Block processes that CrowdStrike analysts classify as suspicious. These are focused on dynamic IOAs, such as malware, exploits and other threats.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "SuspiciousRegistryOperations",
+                  "name": "Suspicious Registry Operations",
+                  "type": "toggle",
+                  "description": "Block registry operations that CrowdStrike analysts classify as suspicious. Focuses on dynamic IOAs, such as ASEPs and security config changes. The associated process may be killed.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "BootConfigurationDatabaseProtection",
+                  "name": "Boot Configuration Database Protection",
+                  "type": "toggle",
+                  "description": "Block BCD registry operations that CrowdStrike analysts classify as suspicious. Focuses on dynamic IOAs, such as security config changes. The associated process may be killed. Requires Suspicious Registry operations.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "FileSystemContainmentEnabled",
+                  "name": "File System Containment",
+                  "type": "toggle",
+                  "description": "File System Containment will be enabled, this will allow prevention capabilities to automatically contain file system activity.  When disabled each user under active containment will be released and the File System Containment will enter a disabled mode.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "MaliciousPowershell",
+                  "name": "Suspicious Scripts and Commands",
+                  "type": "toggle",
+                  "description": "Block execution of scripts and commands that CrowdStrike analysts classify as suspicious. Requires Interpreter-Only and/or Script-Based Execution Monitoring.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "IntelPrevention",
+                  "name": "Intelligence-Sourced Threats",
+                  "type": "toggle",
+                  "description": "Block processes that CrowdStrike Intelligence analysts classify as malicious. These are focused on static hash-based IOCs.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "SuspiciousKernelDrivers",
+                  "name": "Driver Load Prevention",
+                  "type": "toggle",
+                  "description": "Block the loading of kernel drivers that CrowdStrike analysts have identified as malicious. Available on Windows 10 and Windows Server 2016 and later.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "VulnerableDriverProtection",
+                  "name": "Vulnerable Driver Protection",
+                  "type": "toggle",
+                  "description": "Quarantine and block the loading of newly written kernel drivers that CrowdStrike analysts have identified as vulnerable. Available on Windows 10 and Windows 2016 and later.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Exploit Mitigation",
+              "settings": [
+                {
+                  "id": "ForceASLR",
+                  "name": "Force ASLR",
+                  "type": "toggle",
+                  "description": "An Address Space Layout Randomization (ASLR) bypass attempt was detected and blocked. This may have been part of an attempted exploit.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "ForceDEP",
+                  "name": "Force DEP",
+                  "type": "toggle",
+                  "description": "A process that had Force Data Execution Prevention (Force DEP) applied tried to execute non-executable memory and was blocked.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "HeapSprayPreallocation",
+                  "name": "Heap Spray Preallocation",
+                  "type": "toggle",
+                  "description": "A heap spray attempt was detected and blocked. This may have been part of an attempted exploit.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "NullPageAllocation",
+                  "name": "NULL Page Allocation",
+                  "type": "toggle",
+                  "description": " Allocating memory to the NULL (0) memory page was detected and blocked. This may have been part of an attempted exploit.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "SEHOverwriteProtection",
+                  "name": "SEH Overwrite Protection",
+                  "type": "toggle",
+                  "description": "Overwriting a Structured Exception Handler (SEH) was detected and may have been blocked. This may have been part of an attempted exploit.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Ransomware",
+              "settings": [
+                {
+                  "id": "BackupDeletion",
+                  "name": "Backup Deletion",
+                  "type": "toggle",
+                  "description": "Deletion of backups often indicative of ransomware activity.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "Cryptowall",
+                  "name": "Cryptowall",
+                  "type": "toggle",
+                  "description": "A process associated with Cryptowall was blocked.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "FileEncryption",
+                  "name": "File Encryption",
+                  "type": "toggle",
+                  "description": "A process that created a file with a known ransomware extension was terminated.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "Locky",
+                  "name": "Locky",
+                  "type": "toggle",
+                  "description": "A process determined to be associated with Locky was blocked.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "FileSystemAccess",
+                  "name": "File System Access",
+                  "type": "toggle",
+                  "description": "A process associated with a high volume of file system operations typical of ransomware behavior was terminated.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "VolumeShadowCopyAudit",
+                  "name": "Volume Shadow Copy - Audit",
+                  "type": "toggle",
+                  "description": "Create an alert when a suspicious process deletes volume shadow copies. Recommended: Use audit mode with a test group to try allowlisting trusted software before turning on Protect.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "VolumeShadowCopyProtect",
+                  "name": "Volume Shadow Copy - Protect",
+                  "type": "toggle",
+                  "description": "Prevent suspicious processes from deleting volume shadow copies.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Exploitation Behavior",
+              "settings": [
+                {
+                  "id": "ApplicationExploitationActivity",
+                  "name": "Application Exploitation Activity",
+                  "type": "toggle",
+                  "description": "Creation of a process, such as a command prompt, from an exploited browser or browser flash plugin was blocked.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "ChopperWebshell",
+                  "name": "Chopper Webshell",
+                  "type": "toggle",
+                  "description": "Execution of a command shell was blocked and is indicative of the system hosting a Chopper web page.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "DriveByDownload",
+                  "name": "Drive-by Download",
+                  "type": "toggle",
+                  "description": "A suspicious file written by a browser attempted to execute and was blocked.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "ProcessHollowing",
+                  "name": "Code Injection",
+                  "type": "toggle",
+                  "description": "Kill processes that unexpectedly injected code into another process.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "JavaScriptViaRundll32",
+                  "name": "JavaScript Execution Via Rundll32",
+                  "type": "toggle",
+                  "description": "JavaScript executing from a command line via rundll32.exe was prevented.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Lateral Movement and Credential Access",
+              "settings": [
+                {
+                  "id": "WindowsLogonBypassStickyKeys",
+                  "name": "Windows Logon Bypass (\"Sticky Keys\")",
+                  "type": "toggle",
+                  "description": "A command line process associated with Windows logon bypass was prevented from executing.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                },
+                {
+                  "id": "CredentialDumping",
+                  "name": "Credential Dumping",
+                  "type": "toggle",
+                  "description": "Kill suspicious processes determined to be stealing logins and passwords.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Remediation",
+              "settings": [
+                {
+                  "id": "AutomatedRemediation",
+                  "name": "Advanced Remediation",
+                  "type": "toggle",
+                  "description": "Perform advanced remediation for IOA detections to kill processes, quarantine files, remove scheduled tasks, and clear and delete ASEP registry values.",
+                  "value": {
+                    "configured": false,
+                    "enabled": false
+                  }
+                }
+              ]
+            }
+          ],
+          "ioa_rule_groups": []
+        }
+      ]
+    }
+  }
+]

@@ -72,7 +72,7 @@ app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-API-Key', 'X-Mock-Error',
-                   'X-Request-ID', 'X-Timestamp'],
+                   'X-Request-ID', 'X-Timestamp', 'X-Function-Name'],
   exposedHeaders: ['X-Request-ID', 'X-Response-Time'],
   credentials: true
 }));
@@ -137,6 +137,88 @@ app.get('/', (req, res) => {
 // Serve UI page
 app.get('/ui', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// =============================================================================
+// REAL API PATH HANDLER (catch-all)
+// Supports two modes:
+//   1. X-Function-Name header — directly looks up the function by name
+//   2. URL-path matching — matches the request path against known API paths
+//      (works for VirusTotal and others without needing the header)
+// =============================================================================
+const { getMockData, extractApiPath } = require('./data/mockResponses');
+
+/**
+ * Build a lookup map: localPath → { functionName, serviceKey }
+ * Called on each request so edits to extracted_data.json are picked up.
+ */
+function buildPathIndex(mockData) {
+  const index = {};
+  for (const [serviceKey, functions] of Object.entries(mockData)) {
+    for (const [fnName, fnData] of Object.entries(functions)) {
+      const localPath = extractApiPath(fnData.api);
+      if (localPath) {
+        index[localPath] = { functionName: fnName, serviceKey };
+      }
+    }
+  }
+  return index;
+}
+
+app.use((req, res, next) => {
+  const mockData = getMockData();
+  let fnData = null;
+  let matchedFnName = null;
+
+  // --- Mode 1: X-Function-Name header (all services) ---
+  const functionName = req.headers['x-function-name'];
+  if (functionName) {
+    for (const [serviceKey, functions] of Object.entries(mockData)) {
+      if (functions[functionName]) {
+        fnData = functions[functionName];
+        matchedFnName = functionName;
+        break;
+      }
+    }
+  }
+
+  // --- Mode 2: URL-path matching (no header needed) ---
+  if (!fnData) {
+    const pathIndex = buildPathIndex(mockData);
+    const reqPath = req.path.replace(/\/+$/, '') || '/'; // normalize trailing slash
+
+    // Try exact match first
+    if (pathIndex[reqPath]) {
+      const match = pathIndex[reqPath];
+      fnData = mockData[match.serviceKey][match.functionName];
+      matchedFnName = match.functionName;
+    } else {
+      // Try matching with trailing slash stripped from index keys
+      for (const [indexPath, match] of Object.entries(pathIndex)) {
+        const normalizedIndexPath = indexPath.replace(/\/+$/, '') || '/';
+        if (normalizedIndexPath === reqPath) {
+          fnData = mockData[match.serviceKey][match.functionName];
+          matchedFnName = match.functionName;
+          break;
+        }
+      }
+    }
+  }
+
+  if (!fnData) return next();
+
+  logger.info(`API call matched: ${matchedFnName} -> ${req.method} ${req.path}`, {
+    requestBody: req.body,
+    queryParams: req.query,
+    matchMode: functionName ? 'header' : 'url-path'
+  });
+
+  // Return the sample response
+  const response = fnData.sampleResponse;
+  if (typeof response === 'string') {
+    try { return res.json(JSON.parse(response)); } catch (_) { return res.json({ result: response }); }
+  }
+  return res.json(response);
 });
 
 // =============================================================================

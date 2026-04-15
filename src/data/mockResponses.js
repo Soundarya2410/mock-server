@@ -59,4 +59,21 @@ function getMockData() {
   }
 }
 
-module.exports = { getMockData };
+/**
+ * Extract the local path from a full API URL.
+ * e.g. "https://www.virustotal.com/api/v3/domains/" → "/api/v3/domains/"
+ * Returns null for "No API", "Dynamic ..." etc.
+ */
+function extractApiPath(apiUrl) {
+  if (!apiUrl || apiUrl === 'No API' || apiUrl.startsWith('Dynamic')) return null;
+  try {
+    const m = apiUrl.match(/^https?:\/\/[^\/]+(\/.*?)(?:\?.*)?$/);
+    if (m) {
+      // Remove {templateParam} path segments (e.g. /{userLogin} -> '')
+      return m[1].replace(/\/\{[^}]+\}/g, '');
+    }
+  } catch (_) { /* ignore */ }
+  return null;
+}
+
+module.exports = { getMockData, extractApiPath };

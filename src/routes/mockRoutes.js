@@ -184,3 +184,4 @@ router.put('/:service/:functionName', handleMockRequest);
 router.delete('/:service/:functionName', handleMockRequest);
 
 module.exports = router;
+module.exports.handleMockRequest = handleMockRequest;
